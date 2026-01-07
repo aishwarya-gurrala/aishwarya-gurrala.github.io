@@ -1,1 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Insights | Aishwarya Gurrala Muni</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="dot"></span>
+        <div>
+          <div class="brand-title">Aishwarya Gurrala Muni</div>
+          <div class="brand-sub">Insights & Dashboards</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a class="pill" href="index.html">Home</a>
+        <a class="pill" href="projects.html">Projects</a>
+        <a class="pill active" href="insights.html">Insights</a>
+        <a class="pill" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h1>How I translate data into business decisions</h1>
+      <p class="lead">
+        I focus on defining the right KPIs, validating data quality, and using clean dashboards
+        to explain trends, drivers, and actions.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>My approach (simple + repeatable)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1) Metric definition</h3>
+          <p>Clarify business goal → define KPI → document filters, time windows, assumptions.</p>
+          <div class="tags"><span class="tag">KPIs</span><span class="tag">Definitions</span></div>
+        </div>
+        <div class="card">
+          <h3>2) Data trust</h3>
+          <p>Check missingness, outliers, duplicates; validate joins; ensure reproducibility.</p>
+          <div class="tags"><span class="tag">Quality</span><span class="tag">Validation</span></div>
+        </div>
+        <div class="card">
+          <h3>3) Storytelling</h3>
+          <p>Trend → segmentation → drivers → recommendation (always decision-focused).</p>
+          <div class="tags"><span class="tag">Dashboards</span><span class="tag">Story</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Dashboard showcase</h2>
+      <p class="lead" style="font-size:14px;">
+        Add Tableau/Power BI embeds or upload screenshots to <code>assets/images/</code>.
+        Under each, write 2–3 lines: question → KPI → decision.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn secondary" href="#" target="_blank" rel="noopener">Tableau Public (add link)</a>
+        <a class="btn secondary" href="#" target="_blank" rel="noopener">Power BI (add link)</a>
+      </div>
+
+      <h2 style="margin-top:18px;">Boston Housing – Business interpretation</h2>
+      <p class="lead" style="font-size:14px;">
+        What drives price? Which variables matter most? How would this help a real estate team
+        set pricing strategy or prioritize renovations?
+      </p>
+
+      <div class="btnrow">
+        <a class="btn secondary" href="#" target="_blank" rel="noopener">Boston Housing Demo (add link)</a>
+        <a class="btn secondary" href="projects.html">Go to Projects →</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
+      <div>Insights</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
 
