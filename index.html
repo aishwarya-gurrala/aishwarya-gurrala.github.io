@@ -1,84 +1,269 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Aishwarya Gurrala Muni | Data Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css"/>
-</head>
-<body>
-  <header class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <span class="dot"></span>
-        <div>
-          <div class="brand-title">Aishwarya Gurrala Muni</div>
-          <div class="brand-sub">Data Analytics · Data Engineering · ML/AI</div>
-        </div>
-      </div>
+:root{
+  --bg:#0b0f14;
+  --panel:#0f1621;
+  --card:#101a27;
+  --text:#eaf0ff;
+  --muted:#aab6d4;
+  --line:rgba(234,240,255,.12);
+  --accent:#63f5c6;
+  --accent2:#7aa2ff;
+  --shadow: 0 14px 40px rgba(0,0,0,.45);
+  --radius: 18px;
+  --max: 1200px;
+  --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+}
 
-      <nav class="nav-links">
-        <a class="pill active" href="index.html">Home</a>
-        <a class="pill" href="projects.html">Projects</a>
-        <a class="pill" href="insights.html">Insights</a>
-        <a class="pill" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-    </div>
-  </header>
+body.light{
+  --bg:#f6f8fb;
+  --panel:#ffffff;
+  --card:#ffffff;
+  --text:#0b0f14;
+  --muted:#4b5a78;
+  --line:rgba(11,15,20,.12);
+  --shadow: 0 14px 40px rgba(10,20,40,.12);
+}
 
-  <main class="container">
-    <section class="panel">
-      <h1>Data-centric portfolio</h1>
-      <p class="lead">
-        I build end-to-end data solutions—SQL transformations, Python pipelines, and ML models—
-        and present insights through clear dashboards and business-focused storytelling.
-      </p>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  background:
+    radial-gradient(1000px 700px at 15% 0%, rgba(122,162,255,.18), transparent 55%),
+    radial-gradient(900px 700px at 85% 0%, rgba(99,245,198,.12), transparent 55%),
+    var(--bg);
+  color:var(--text);
+}
 
-      <div class="btnrow">
-        <a class="btn" href="projects.html">View Projects →</a>
-        <a class="btn secondary" href="insights.html">View Insights →</a>
-      </div>
-    </section>
+a{color:inherit; text-decoration:none}
+a:hover{color:var(--accent2)}
+code{font-family:var(--mono)}
 
-    <section class="panel">
-      <h2>Core Skills</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Data Analytics</h3>
-          <p>EDA, KPI design, experimentation thinking, trend & cohort analysis.</p>
-          <div class="tags"><span class="tag">Metrics</span><span class="tag">EDA</span><span class="tag">Insights</span></div>
-        </div>
-        <div class="card">
-          <h3>Data Engineering</h3>
-          <p>SQL modeling, joins/windows, ETL logic, data validation & documentation.</p>
-          <div class="tags"><span class="tag">SQL</span><span class="tag">ETL</span><span class="tag">Quality</span></div>
-        </div>
-        <div class="card">
-          <h3>ML / AI</h3>
-          <p>Regression/classification, feature engineering, evaluation, interpretability.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">ML</span><span class="tag">Explainability</span></div>
-        </div>
-      </div>
-    </section>
+.themeToggle{
+  position:fixed;
+  right:16px;
+  top:16px;
+  z-index:100;
+  border:1px solid var(--line);
+  background:rgba(16,26,39,.75);
+  color:var(--text);
+  padding:10px 12px;
+  border-radius:999px;
+  box-shadow:var(--shadow);
+  cursor:pointer;
+}
 
-    <section class="panel">
-      <h2>Links</h2>
-      <div class="btnrow">
-        <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn (edit)</a>
-        <a class="btn secondary" href="mailto:youremail@example.com">Email (edit)</a>
-        <a class="btn secondary" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume PDF (add later)</a>
-      </div>
-      <p class="lead" style="font-size:14px;">Replace LinkedIn + email when ready. Resume can be uploaded to the assets folder.</p>
-    </section>
+.layout{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:24px 16px 60px;
+  display:grid;
+  grid-template-columns: 340px 1fr;
+  gap:18px;
+}
+@media (max-width: 980px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:relative}
+}
 
-    <footer class="footer">
-      <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
-      <div>Hosted on GitHub Pages</div>
-    </footer>
-  </main>
+.sidebar{
+  position:sticky;
+  top:24px;
+  align-self:start;
+  border:1px solid var(--line);
+  background:rgba(15,22,33,.78);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px;
+}
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+.profile .name{
+  font-size:44px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+.profile .role{
+  margin-top:10px;
+  color:var(--accent);
+  font-family:var(--mono);
+  font-size:14px;
+}
+.profile .blurb{
+  margin-top:14px;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+.ctaRow{margin-top:14px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid rgba(99,245,198,.35);
+  background: rgba(99,245,198,.10);
+  color:var(--text);
+  width:100%;
+}
+
+.sideBlock{margin-top:18px; padding-top:14px; border-top:1px solid var(--line)}
+.sideTitle{font-size:12px; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; margin-bottom:10px}
+
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{
+  font-family:var(--mono);
+  font-size:12px;
+  border:1px solid var(--line);
+  padding:7px 10px;
+  border-radius:999px;
+  color:var(--muted);
+  background: rgba(16,26,39,.45);
+}
+
+.sideNav{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.sideLink{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid transparent;
+  color:var(--muted);
+}
+.sideLink:hover{
+  border-color:var(--line);
+  background: rgba(16,26,39,.35);
+  color:var(--text);
+}
+
+.sideLinks{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+.linkBtn{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background: rgba(16,26,39,.35);
+  color:var(--text);
+  text-align:center;
+}
+.linkBtn:hover{border-color: rgba(122,162,255,.45); background: rgba(122,162,255,.10)}
+
+.content{
+  border:1px solid var(--line);
+  background: rgba(15,22,33,.58);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding:22px;
+}
+
+.hero h1{margin:0 0 8px; font-size:34px; letter-spacing:-.02em}
+.sub{margin:0; color:var(--muted); line-height:1.6}
+
+.section{margin-top:22px}
+.section h2{margin:0 0 12px; font-size:16px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:16px;
+}
+@media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+
+.card{
+  border:1px solid var(--line);
+  background: rgba(16,26,39,.55);
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+  position:relative;
+}
+.badge{
+  position:absolute;
+  top:12px;
+  right:12px;
+  font-family:var(--mono);
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(99,245,198,.35);
+  background: rgba(99,245,198,.12);
+}
+.badge.ghost{
+  border-color: rgba(122,162,255,.35);
+  background: rgba(122,162,255,.10);
+}
+.thumb{
+  height:160px;
+  background:
+    radial-gradient(700px 240px at 10% 20%, rgba(122,162,255,.22), transparent 60%),
+    radial-gradient(700px 240px at 90% 60%, rgba(99,245,198,.14), transparent 60%),
+    #0d1420;
+}
+.thumb img{width:100%; height:100%; object-fit:cover; display:block}
+
+.cardBody{padding:16px}
+.cardTitle{font-size:18px; font-weight:750; margin-bottom:8px}
+.cardDesc{color:var(--muted); line-height:1.6; font-size:14px}
+.tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+.tag{
+  font-family:var(--mono);
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+  background: rgba(16,26,39,.35);
+}
+.cardLinks{
+  margin-top:12px;
+  display:flex;
+  gap:14px;
+  color:var(--accent2);
+}
+.cardLinks a{font-family:var(--mono); font-size:13px}
+
+.panel{
+  border:1px solid var(--line);
+  background: rgba(16,26,39,.35);
+  border-radius: var(--radius);
+  padding:16px;
+}
+
+.row{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.rowTitle{font-weight:750}
+.rowMeta{color:var(--muted); font-family:var(--mono); font-size:12px}
+
+.bullets{margin:10px 0 0 18px; color:var(--muted); line-height:1.7}
+.skillGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+}
+@media (max-width: 900px){ .skillGrid{grid-template-columns:1fr} }
+.k{font-family:var(--mono); color:var(--accent); font-size:12px; letter-spacing:.06em; text-transform:uppercase}
+.v{color:var(--muted); margin-top:6px; line-height:1.6}
+
+.footer{
+  margin-top:24px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  color:var(--muted);
+  font-size:13px;
+}
+
