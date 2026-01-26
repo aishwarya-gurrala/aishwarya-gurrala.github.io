@@ -1,269 +1,231 @@
-:root{
-  --bg:#0b0f14;
-  --panel:#0f1621;
-  --card:#101a27;
-  --text:#eaf0ff;
-  --muted:#aab6d4;
-  --line:rgba(234,240,255,.12);
-  --accent:#63f5c6;
-  --accent2:#7aa2ff;
-  --shadow: 0 14px 40px rgba(0,0,0,.45);
-  --radius: 18px;
-  --max: 1200px;
-  --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aishwarya Gurrala Muni | Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <button class="themeToggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
 
-body.light{
-  --bg:#f6f8fb;
-  --panel:#ffffff;
-  --card:#ffffff;
-  --text:#0b0f14;
-  --muted:#4b5a78;
-  --line:rgba(11,15,20,.12);
-  --shadow: 0 14px 40px rgba(10,20,40,.12);
-}
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="name">Aishwarya<br/>Gurrala Muni</div>
+        <div class="role">Data Analyst · Data Scientist</div>
+        <p class="blurb">
+          SQL + Python for analytics, modeling, and decision-ready insights.
+          Focused on clean metrics, reliable data, and explainable results.
+        </p>
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:var(--sans);
-  background:
-    radial-gradient(1000px 700px at 15% 0%, rgba(122,162,255,.18), transparent 55%),
-    radial-gradient(900px 700px at 85% 0%, rgba(99,245,198,.12), transparent 55%),
-    var(--bg);
-  color:var(--text);
-}
+        <div class="ctaRow">
+          <a class="btn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Download Resume ↗</a>
+        </div>
+      </div>
 
-a{color:inherit; text-decoration:none}
-a:hover{color:var(--accent2)}
-code{font-family:var(--mono)}
+      <div class="sideBlock">
+        <div class="sideTitle">Top Skills</div>
+        <div class="chips">
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Data Modeling</span>
+          <span class="chip">ETL</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Model Evaluation</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Power BI</span>
+        </div>
+      </div>
 
-.themeToggle{
-  position:fixed;
-  right:16px;
-  top:16px;
-  z-index:100;
-  border:1px solid var(--line);
-  background:rgba(16,26,39,.75);
-  color:var(--text);
-  padding:10px 12px;
-  border-radius:999px;
-  box-shadow:var(--shadow);
-  cursor:pointer;
-}
+      <nav class="sideNav">
+        <a href="#featured" class="sideLink">Featured Work</a>
+        <a href="#experience" class="sideLink">Experience</a>
+        <a href="#skills" class="sideLink">Skills</a>
+        <a href="#certs" class="sideLink">Certifications</a>
+        <a href="#education" class="sideLink">Education</a>
+        <a href="#now" class="sideLink">Now</a>
+      </nav>
 
-.layout{
-  max-width:var(--max);
-  margin:0 auto;
-  padding:24px 16px 60px;
-  display:grid;
-  grid-template-columns: 340px 1fr;
-  gap:18px;
-}
-@media (max-width: 980px){
-  .layout{grid-template-columns:1fr}
-  .sidebar{position:relative}
-}
+      <div class="sideLinks">
+        <a class="linkBtn" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
+        <a class="linkBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="linkBtn" href="mailto:youremail@example.com">Email</a>
+        <a class="linkBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </aside>
 
-.sidebar{
-  position:sticky;
-  top:24px;
-  align-self:start;
-  border:1px solid var(--line);
-  background:rgba(15,22,33,.78);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  padding:18px;
-}
+    <!-- RIGHT CONTENT -->
+    <main class="content">
+      <section class="hero">
+        <h1>Featured Work</h1>
+        <p class="sub">
+          Selected projects across analytics, data engineering, and applied ML — written as
+          problem → approach → outcome, with links to code and reports.
+        </p>
+      </section>
 
-.profile .name{
-  font-size:44px;
-  line-height:1;
-  font-weight:800;
-  letter-spacing:-.02em;
-}
-.profile .role{
-  margin-top:10px;
-  color:var(--accent);
-  font-family:var(--mono);
-  font-size:14px;
-}
-.profile .blurb{
-  margin-top:14px;
-  color:var(--muted);
-  line-height:1.6;
-  font-size:14px;
-}
+      <!-- FEATURED WORK -->
+      <section id="featured" class="section">
+        <h2>Projects</h2>
 
-.ctaRow{margin-top:14px}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:12px 14px;
-  border-radius:14px;
-  border:1px solid rgba(99,245,198,.35);
-  background: rgba(99,245,198,.10);
-  color:var(--text);
-  width:100%;
-}
+        <div class="grid">
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="badge">FEATURED</div>
+            <div class="thumb">
+              <!-- Optional: replace with an image -->
+              <!-- <img src="assets/images/boston.png" alt="Boston Housing"/> -->
+            </div>
+            <div class="cardBody">
+              <div class="cardTitle">Housing Price Drivers & Model Comparison</div>
+              <div class="cardDesc">
+                Compared regression, trees, k-NN, ensembles, GAM, and neural nets using MSPE.
+                Interpreted performance trade-offs and stakeholder-friendly model choices.
+              </div>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Regression</span><span class="tag">MSPE</span>
+                <span class="tag">Model Comparison</span><span class="tag">Interpretability</span>
+              </div>
+              <div class="cardLinks">
+                <a href="PASTE_GITHUB_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+                <a href="PASTE_HTML_REPORT_LINK" target="_blank" rel="noopener">Report ↗</a>
+              </div>
+            </div>
+          </article>
 
-.sideBlock{margin-top:18px; padding-top:14px; border-top:1px solid var(--line)}
-.sideTitle{font-size:12px; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; margin-bottom:10px}
+          <!-- Project 2 -->
+          <article class="card">
+            <div class="badge ghost">ML</div>
+            <div class="thumb"></div>
+            <div class="cardBody">
+              <div class="cardTitle">F1 Win Probability Predictor</div>
+              <div class="cardDesc">
+                Feature engineering + model evaluation to estimate win probability.
+                Added explainability to show what drives predictions.
+              </div>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">SHAP</span>
+              </div>
+              <div class="cardLinks">
+                <a href="#" target="_blank" rel="noopener">Code ↗</a>
+                <a href="#" target="_blank" rel="noopener">App ↗</a>
+              </div>
+            </div>
+          </article>
 
-.chips{display:flex; flex-wrap:wrap; gap:8px}
-.chip{
-  font-family:var(--mono);
-  font-size:12px;
-  border:1px solid var(--line);
-  padding:7px 10px;
-  border-radius:999px;
-  color:var(--muted);
-  background: rgba(16,26,39,.45);
-}
+          <!-- Project 3 -->
+          <article class="card">
+            <div class="badge ghost">SQL</div>
+            <div class="thumb"></div>
+            <div class="cardBody">
+              <div class="cardTitle">SQL + ETL: Analytics-Ready Tables</div>
+              <div class="cardDesc">
+                Converted raw transactional data into KPI-ready tables with joins/windows,
+                data quality checks, and documentation.
+              </div>
+              <div class="tags">
+                <span class="tag">SQL</span><span class="tag">ETL</span><span class="tag">Data Quality</span>
+              </div>
+              <div class="cardLinks">
+                <a href="#" target="_blank" rel="noopener">Repo ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-.sideNav{
-  margin-top:18px;
-  padding-top:14px;
-  border-top:1px solid var(--line);
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
-.sideLink{
-  padding:10px 12px;
-  border-radius:12px;
-  border:1px solid transparent;
-  color:var(--muted);
-}
-.sideLink:hover{
-  border-color:var(--line);
-  background: rgba(16,26,39,.35);
-  color:var(--text);
-}
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="panel">
+          <div class="row">
+            <div class="rowTitle">Amazon — Risk Analyst / Senior Data Analyst</div>
+            <div class="rowMeta">2020–2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Owned SQL-driven analysis and reporting for risk and operational decision-making.</li>
+            <li>Improved data reliability through validation checks and consistent metric definitions.</li>
+            <li>Delivered dashboards and insights for cross-functional stakeholders.</li>
+          </ul>
+        </div>
+      </section>
 
-.sideLinks{
-  margin-top:18px;
-  padding-top:14px;
-  border-top:1px solid var(--line);
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:10px;
-}
-.linkBtn{
-  padding:10px 12px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background: rgba(16,26,39,.35);
-  color:var(--text);
-  text-align:center;
-}
-.linkBtn:hover{border-color: rgba(122,162,255,.45); background: rgba(122,162,255,.10)}
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="panel">
+          <div class="skillGrid">
+            <div>
+              <div class="k">Analytics</div>
+              <div class="v">EDA, KPI design, cohort analysis, experimentation thinking</div>
+            </div>
+            <div>
+              <div class="k">Engineering</div>
+              <div class="v">SQL modeling, joins/windows, ETL logic, documentation</div>
+            </div>
+            <div>
+              <div class="k">ML</div>
+              <div class="v">Regression/classification, evaluation, feature engineering, explainability</div>
+            </div>
+            <div>
+              <div class="k">BI</div>
+              <div class="v">Tableau, Power BI, dashboard design</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-.content{
-  border:1px solid var(--line);
-  background: rgba(15,22,33,.58);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding:22px;
-}
+      <!-- CERTIFICATIONS -->
+      <section id="certs" class="section">
+        <h2>Certifications</h2>
+        <div class="panel">
+          <ul class="bullets">
+            <li>AWS Cloud Practitioner (add your exact cert name if different)</li>
+            <li>Graduate Certificate in AI</li>
+          </ul>
+        </div>
+      </section>
 
-.hero h1{margin:0 0 8px; font-size:34px; letter-spacing:-.02em}
-.sub{margin:0; color:var(--muted); line-height:1.6}
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="panel">
+          <ul class="bullets">
+            <li>MS Business Analytics — University of Cincinnati</li>
+            <li>BTech Information Technology — Presidency University</li>
+          </ul>
+        </div>
+      </section>
 
-.section{margin-top:22px}
-.section h2{margin:0 0 12px; font-size:16px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
+      <!-- NOW -->
+      <section id="now" class="section">
+        <h2>Now</h2>
+        <div class="panel">
+          <ul class="bullets">
+            <li>Targeting Data Analyst / Data Scientist roles (US).</li>
+            <li>Strengthening portfolio with case-study style projects + dashboards.</li>
+          </ul>
+        </div>
+      </section>
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:16px;
-}
-@media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+      <footer class="footer">
+        <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
+        <div>Hosted on GitHub Pages</div>
+      </footer>
+    </main>
+  </div>
 
-.card{
-  border:1px solid var(--line);
-  background: rgba(16,26,39,.55);
-  border-radius: var(--radius);
-  overflow:hidden;
-  box-shadow: 0 10px 26px rgba(0,0,0,.22);
-  position:relative;
-}
-.badge{
-  position:absolute;
-  top:12px;
-  right:12px;
-  font-family:var(--mono);
-  font-size:12px;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid rgba(99,245,198,.35);
-  background: rgba(99,245,198,.12);
-}
-.badge.ghost{
-  border-color: rgba(122,162,255,.35);
-  background: rgba(122,162,255,.10);
-}
-.thumb{
-  height:160px;
-  background:
-    radial-gradient(700px 240px at 10% 20%, rgba(122,162,255,.22), transparent 60%),
-    radial-gradient(700px 240px at 90% 60%, rgba(99,245,198,.14), transparent 60%),
-    #0d1420;
-}
-.thumb img{width:100%; height:100%; object-fit:cover; display:block}
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const btn = document.getElementById("themeToggle");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      btn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
 
-.cardBody{padding:16px}
-.cardTitle{font-size:18px; font-weight:750; margin-bottom:8px}
-.cardDesc{color:var(--muted); line-height:1.6; font-size:14px}
-.tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
-.tag{
-  font-family:var(--mono);
-  font-size:12px;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  color:var(--muted);
-  background: rgba(16,26,39,.35);
-}
-.cardLinks{
-  margin-top:12px;
-  display:flex;
-  gap:14px;
-  color:var(--accent2);
-}
-.cardLinks a{font-family:var(--mono); font-size:13px}
-
-.panel{
-  border:1px solid var(--line);
-  background: rgba(16,26,39,.35);
-  border-radius: var(--radius);
-  padding:16px;
-}
-
-.row{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
-.rowTitle{font-weight:750}
-.rowMeta{color:var(--muted); font-family:var(--mono); font-size:12px}
-
-.bullets{margin:10px 0 0 18px; color:var(--muted); line-height:1.7}
-.skillGrid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:12px;
-}
-@media (max-width: 900px){ .skillGrid{grid-template-columns:1fr} }
-.k{font-family:var(--mono); color:var(--accent); font-size:12px; letter-spacing:.06em; text-transform:uppercase}
-.v{color:var(--muted); margin-top:6px; line-height:1.6}
-
-.footer{
-  margin-top:24px;
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:12px;
-  color:var(--muted);
-  font-size:13px;
-}
 
