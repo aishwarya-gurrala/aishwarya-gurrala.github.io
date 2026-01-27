@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Aishwarya — Data Engineer</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <header class="nav">
     <div class="nav__inner">
       <div class="brand">
         <span class="brand__dot"></span>
-        <span class="brand__name">YourName</span>
+        <span class="brand__name">Aishwarya</span>
       </div>
 
       <nav class="menu">
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#work">Experience</a>
-        <a href="#contact" class="btn">Contact</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a class="btn" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -26,43 +27,57 @@
   <main class="container">
     <section class="hero">
       <div class="hero__left">
-        <p class="pill">Data • AI • Engineering</p>
-        <h1>Building practical, clean systems that ship.</h1>
+        <p class="pill">Data Engineering • Pipelines • Analytics Enablement</p>
+        <h1>Reliable data pipelines that teams can trust.</h1>
         <p class="sub">
-          Short 2–3 line intro about what you do, what you’re targeting, and the kind of work you enjoy.
+          I build production-grade pipelines, warehouse models, and monitoring that turn messy data into
+          dependable tables and metrics — built for scale, quality, and easy consumption.
         </p>
 
         <div class="hero__cta">
           <a class="btn" href="#projects">View Projects</a>
-          <a class="btn btn--ghost" href="#" download>Download Resume</a>
+          <a class="btn btn--ghost" href="./resume.pdf" download>Download Resume</a>
         </div>
 
         <div class="links">
           <a href="#" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="#" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="#" target="_blank" rel="noreferrer">Email ↗</a>
+          <a href="mailto:you@email.com">Email ↗</a>
         </div>
       </div>
 
       <div class="hero__right">
         <div class="stats">
           <div class="stat">
-            <div class="stat__num">8+</div>
-            <div class="stat__label">Projects</div>
+            <div class="stat__num">Pipelines</div>
+            <div class="stat__label">ETL/ELT • Orchestration</div>
           </div>
           <div class="stat">
-            <div class="stat__num">4 yrs</div>
-            <div class="stat__label">Experience</div>
+            <div class="stat__num">Quality</div>
+            <div class="stat__label">Checks • SLAs • Alerts</div>
           </div>
           <div class="stat">
-            <div class="stat__num">SQL • Py</div>
-            <div class="stat__label">Core Stack</div>
+            <div class="stat__num">Warehouse</div>
+            <div class="stat__label">Models • Metrics</div>
           </div>
         </div>
 
         <div class="panel">
-          <h3>Currently building</h3>
-          <p>One-liner about your current portfolio project (ex: Smart Explorer / RAG / dashboards).</p>
+          <h3>Typical architecture I build</h3>
+          <div class="flow">
+            <span class="node">Sources</span>
+            <span class="arrow">→</span>
+            <span class="node">Ingest</span>
+            <span class="arrow">→</span>
+            <span class="node">Store</span>
+            <span class="arrow">→</span>
+            <span class="node">Transform</span>
+            <span class="arrow">→</span>
+            <span class="node">Serve</span>
+          </div>
+          <p class="muted small">
+            Example: S3/ADLS → ADF/Airflow → Snowflake/Databricks → dbt/Spark → BI/ML + monitoring.
+          </p>
         </div>
       </div>
     </section>
@@ -70,30 +85,38 @@
     <section id="projects" class="section">
       <div class="section__head">
         <h2>Projects</h2>
-        <p>Stuff I built — focused on shipping + measurable outcomes.</p>
+        <p>DE projects with architecture, scale, and impact — not just screenshots.</p>
       </div>
 
       <div class="grid">
         <article class="card">
           <div class="card__top">
-            <span class="tag">PERSONAL</span>
-            <span class="meta">React • JS</span>
+            <span class="tag">PIPELINES</span>
+            <span class="meta">Python • Spark • SQL</span>
           </div>
-          <h3>AlgoRecall</h3>
-          <p>Spaced repetition for DSA patterns — lightweight, fast, and browser-only storage.</p>
+          <h3>ETL Pipeline Optimization</h3>
+          <p>Built an end-to-end pipeline with validation + logging to improve reliability and reduce failures.</p>
+          <ul class="bullets">
+            <li>Added data quality checks and schema validation before load.</li>
+            <li>Introduced monitoring hooks + run metrics for faster debugging.</li>
+          </ul>
           <div class="card__actions">
             <a href="#" class="link">Case study ↗</a>
-            <a href="#" class="link">Demo ↗</a>
+            <a href="#" class="link">GitHub ↗</a>
           </div>
         </article>
 
         <article class="card">
           <div class="card__top">
-            <span class="tag tag--work">WORK</span>
-            <span class="meta">Python • SQL</span>
+            <span class="tag tag--work">WAREHOUSE</span>
+            <span class="meta">dbt • Snowflake</span>
           </div>
-          <h3>Customer Insights Pipeline</h3>
-          <p>Event-driven pipeline analyzing tickets and producing root-cause summaries.</p>
+          <h3>Analytics Layer (Star Schema)</h3>
+          <p>Designed curated models and metrics tables so dashboards and analysts get consistent numbers.</p>
+          <ul class="bullets">
+            <li>Dim/fact modeling + incremental loads.</li>
+            <li>Tests for nulls, uniqueness, freshness.</li>
+          </ul>
           <div class="card__actions">
             <a href="#" class="link">Case study ↗</a>
           </div>
@@ -101,60 +124,86 @@
 
         <article class="card">
           <div class="card__top">
-            <span class="tag">DATA</span>
-            <span class="meta">Tableau • Power BI</span>
+            <span class="tag">OBSERVABILITY</span>
+            <span class="meta">Alerts • SLAs</span>
           </div>
-          <h3>Dashboard Pack</h3>
-          <p>Clean dashboards with business KPIs, drilldowns, and performance tracking.</p>
+          <h3>Pipeline Monitoring + SLA Alerts</h3>
+          <p>Implemented run logging and alerts to catch failures early and reduce “silent data issues.”</p>
+          <ul class="bullets">
+            <li>Row-count + anomaly checks.</li>
+            <li>Freshness alerts when downstream tables lag.</li>
+          </ul>
           <div class="card__actions">
-            <a href="#" class="link">View ↗</a>
+            <a href="#" class="link">Write-up ↗</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="stack" class="section">
       <div class="section__head">
-        <h2>Skills</h2>
-        <p>A quick snapshot — no fluff.</p>
+        <h2>Stack</h2>
+        <p>Grouped the way DE recruiters think.</p>
       </div>
 
-      <div class="chips">
-        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span>
-        <span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">ETL</span>
-        <span class="chip">ML</span><span class="chip">AWS</span><span class="chip">Databricks</span>
+      <div class="stackGrid">
+        <div class="stackBox">
+          <h3>Orchestration</h3>
+          <div class="chips">
+            <span class="chip">Airflow</span><span class="chip">ADF</span><span class="chip">Cron</span>
+          </div>
+        </div>
+        <div class="stackBox">
+          <h3>Warehouse / Lake</h3>
+          <div class="chips">
+            <span class="chip">Snowflake</span><span class="chip">ADLS</span><span class="chip">S3</span>
+          </div>
+        </div>
+        <div class="stackBox">
+          <h3>Transforms</h3>
+          <div class="chips">
+            <span class="chip">dbt</span><span class="chip">Spark</span><span class="chip">SQL</span><span class="chip">Python</span>
+          </div>
+        </div>
+        <div class="stackBox">
+          <h3>Quality</h3>
+          <div class="chips">
+            <span class="chip">Great Expectations</span><span class="chip">dbt tests</span><span class="chip">Checks</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="experience" class="section">
       <div class="section__head">
         <h2>Experience</h2>
-        <p>What I did and what changed because of it.</p>
+        <p>Impact-driven bullets (DE style).</p>
       </div>
 
       <div class="timeline">
         <div class="item">
-          <h3>Senior Data Analyst — Amazon</h3>
-          <p class="muted">2020–2024 • Risk Analytics • SQL/Python/Dashboards</p>
+          <h3>Amazon — Data Analyst / Senior Data Analyst</h3>
+          <p class="muted">2020–2024 • SQL/Python • Large-scale data workflows</p>
           <ul>
-            <li>Example impact bullet — speed, cost, accuracy, time saved.</li>
-            <li>Example impact bullet — scale, automation, data quality.</li>
+            <li>Built automated reporting and data pipelines used by stakeholders to make faster decisions.</li>
+            <li>Improved data reliability by adding checks, standardizing sources, and reducing manual work.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section footer">
-      <h2>Let’s connect</h2>
-      <p>Drop a message — I’ll respond.</p>
+      <h2>Contact</h2>
+      <p class="muted">If you’re hiring for Data Engineering / Analytics Engineering roles, I’d love to connect.</p>
       <div class="hero__cta">
-        <a class="btn" href="mailto:you@email.com">Email me</a>
-        <a class="btn btn--ghost" href="#">LinkedIn ↗</a>
+        <a class="btn" href="mailto:you@email.com">Email</a>
+        <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
     </section>
   </main>
 </body>
 </html>
+
 
 
 
