@@ -3,311 +3,138 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Aishwarya Gurrala Muni | Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <title>Aishwarya Gurrala Muni | Data Engineering Portfolio</title>
+  <meta name="description" content="Data Engineer portfolio: Snowflake + dbt, Spark pipelines, SQL modeling, and ML-ready datasets."/>
+  <link rel="stylesheet" href="assets/style.css?v=3"/>
 </head>
 
 <body>
   <header class="topbar">
     <div class="topbarInner">
-      <a class="brand" href="index.html">
-        <span class="dot"></span>
-        <span class="brandText">Aishwarya Gurrala Muni</span>
+      <a class="brand" href="#">
+        <span class="brandDot"></span>
+        <span class="brandName">Aishwarya Gurrala Muni</span>
       </a>
 
       <nav class="topnav">
-        <a href="#work" class="toplink">Work</a>
-        <a href="#experience" class="toplink">Experience</a>
-        <a href="#skills" class="toplink">Skills</a>
-        <a href="#contact" class="toplink">Contact</a>
+        <a href="#featured">Selected Systems</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#certs">Credentials</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <button class="themeToggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <div class="topActions">
+        <button class="themeToggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+        <a class="pill" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </div>
   </header>
 
-  <div class="shell">
-    <!-- LEFT: Profile rail -->
-    <aside class="rail">
-      <div class="profileCard">
-        <div class="name">Aishwarya<br/>Gurrala Muni</div>
-        <div class="role">Data Analyst · Data Scientist</div>
+  <div class="wrap">
+    <div class="layout">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="name">Aishwarya<br/>Gurrala Muni</div>
+          <div class="role">Data Engineer · Analytics Engineer · Data Scientist</div>
 
-        <p class="blurb">
-          I work across analytics and applied ML — turning messy data into reliable
-          metrics, clear insights, and decision-ready outputs.
-        </p>
+          <p class="blurb">
+            Snowflake + dbt transformations, Spark pipelines, and SQL modeling that turn messy data into
+            dependable datasets for decision-making and ML workflows.
+          </p>
 
-        <div class="ctaRow">
-          <a class="btn primary" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
-          <a class="btn" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-
-        <div class="mini">
-          <div class="miniTitle">Highlights</div>
-          <ul class="miniList">
-            <li><b>1B+</b> supply-chain records (pipelines & analytics)</li>
-            <li><b>2M+</b> multimodal records (PySpark + ML workflows)</li>
-            <li><b>Snowflake + dbt</b> transformations & data quality tests</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="railBlock">
-        <div class="railTitle">Core toolkit</div>
-        <div class="chips">
-          <span class="chip">SQL</span>
-          <span class="chip">Python</span>
-          <span class="chip">dbt</span>
-          <span class="chip">Snowflake</span>
-          <span class="chip">PySpark</span>
-          <span class="chip">Tableau</span>
-          <span class="chip">Power BI</span>
-          <span class="chip">ML Evaluation</span>
-        </div>
-      </div>
-
-      <div class="railBlock">
-        <div class="railTitle">Links</div>
-        <div class="linkGrid">
-          <a class="linkBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="linkBtn" href="mailto:youremail@example.com">Email</a>
-          <a class="linkBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-          <a class="linkBtn" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </aside>
-
-    <!-- RIGHT: Main content -->
-    <main class="main">
-      <section class="hero">
-        <div class="heroKicker">Portfolio</div>
-        <h1>Analytics + ML work that reads like real case studies.</h1>
-        <p class="heroSub">
-          Instead of “tool lists,” I show the thinking: problem framing, evaluation,
-          tradeoffs, and outcomes — the way teams work in production.
-        </p>
-
-        <div class="heroActions">
-          <a class="btn primary" href="#work">View work</a>
-          <a class="btn" href="#experience">Experience</a>
-        </div>
-      </section>
-
-      <!-- WORK -->
-      <section id="work" class="section">
-        <div class="sectionHead">
-          <h2>Selected work</h2>
-          <p class="hint">Strongest signal first: depth, evaluation, clarity.</p>
-        </div>
-
-        <!-- Featured case (full-width) -->
-        <article class="case featured">
-          <div class="caseTop">
-            <div>
-              <div class="caseTitle">Housing Price Drivers & Model Comparison</div>
-              <div class="caseMeta">Case study · Model evaluation · Interpretability</div>
-            </div>
-            <div class="pill">FEATURED</div>
-          </div>
-
-          <div class="caseBody">
-            <p class="caseDesc">
-              Compared multiple predictive approaches (linear regression, tree-based models,
-              k-NN, ensembles, GAM, neural networks) using out-of-sample error (MSPE).
-              Framed tradeoffs between accuracy and interpretability to recommend
-              models appropriate for business decisions.
-            </p>
-
-            <div class="tagRow">
-              <span class="tag">Python</span>
-              <span class="tag">Regression</span>
-              <span class="tag">MSPE</span>
-              <span class="tag">Model Comparison</span>
-              <span class="tag">Explainability</span>
-            </div>
-
-            <div class="caseLinks">
-              <a href="PASTE_GITHUB_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
-              <a href="PASTE_HTML_REPORT_LINK" target="_blank" rel="noopener">Report ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Two-column grid for the rest -->
-        <div class="caseGrid">
-          <article class="case">
-            <div class="caseTop">
-              <div>
-                <div class="caseTitle">F1 Win Probability Predictor</div>
-                <div class="caseMeta">Applied ML · Feature engineering · Explainability</div>
-              </div>
-              <div class="pill ghost">ML</div>
-            </div>
-            <div class="caseBody">
-              <p class="caseDesc">
-                Estimated win probability using engineered race features and
-                evaluation-first modeling. Added explainability to show which
-                factors move predictions and why.
-              </p>
-              <div class="tagRow">
-                <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">SHAP</span>
-              </div>
-              <div class="caseLinks">
-                <a href="#" target="_blank" rel="noopener">Code ↗</a>
-                <a href="#" target="_blank" rel="noopener">App ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="caseTop">
-              <div>
-                <div class="caseTitle">SQL + dbt: Analytics-Ready Tables</div>
-                <div class="caseMeta">Transformations · Data quality · Documentation</div>
-              </div>
-              <div class="pill ghost">SQL</div>
-            </div>
-            <div class="caseBody">
-              <p class="caseDesc">
-                Built staging + mart layers that standardize schemas, apply business
-                rules, and ship trusted datasets for dashboards and ad-hoc analysis.
-                Included not-null/unique tests and clear lineage.
-              </p>
-              <div class="tagRow">
-                <span class="tag">SQL</span><span class="tag">dbt</span><span class="tag">Snowflake</span><span class="tag">Data Quality</span>
-              </div>
-              <div class="caseLinks">
-                <a href="#" target="_blank" rel="noopener">Repo ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <div class="sectionHead">
-          <h2>Experience</h2>
-          <p class="hint">Impact + scale + the systems behind it.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="job">
-            <div class="jobHead">
-              <div>
-                <div class="jobTitle">Graduate Assistant – Data Engineering & ML Research</div>
-                <div class="jobOrg">University of Cincinnati · Cincinnati, OH</div>
-              </div>
-              <div class="jobMeta">Aug 2024 – Dec 2025</div>
-            </div>
-            <ul class="bullets">
-              <li>Built Python and PySpark pipelines to ingest, transform, and prepare <b>2M+</b> multimodal image–text records for analytics and ML workflows.</li>
-              <li>Used <b>dbt</b> to build SQL transformation models in <b>Snowflake</b>, converting curated tables into analytics-ready datasets.</li>
-              <li>Created dbt staging + mart models to standardize schemas, apply business logic, and support downstream analytical consumption.</li>
-              <li>Implemented dbt tests (not-null, unique) to enforce data quality and catch upstream issues early.</li>
-              <li>Used dbt docs + lineage to track dependencies and improve dataset transparency for stakeholders.</li>
-              <li>Optimized Spark transformations (partitioning, caching, shuffle reduction), improving runtime efficiency by <b>28%</b>.</li>
-              <li>Collaborated in an Agile environment with code reviews and ownership of pipeline + dbt components.</li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <div class="jobHead">
-              <div>
-                <div class="jobTitle">Senior Data Engineer – Risk & Analytics Platforms</div>
-                <div class="jobOrg">Amazon India · Bengaluru, India</div>
-              </div>
-              <div class="jobMeta">Apr 2022 – Jun 2024</div>
-            </div>
-            <ul class="bullets">
-              <li>Designed and supported large-scale SQL/Python pipelines processing <b>1B+</b> supply-chain records for analytics and risk platforms.</li>
-              <li>Developed and maintained dbt models on Snowflake to transform raw/intermediate datasets into curated fact and dimension tables.</li>
-              <li>Standardized business metrics using dbt-managed transformations, enabling consistent reporting across <b>10+</b> teams.</li>
-              <li>Led migration of legacy SQL workflows into dbt-managed Snowflake models, improving lineage visibility and reducing transformation errors.</li>
-              <li>Improved pipeline/query performance by <b>25%</b> through join tuning, partition optimization, and Snowflake query optimization.</li>
-              <li>Built monitoring + RCA dashboards to track pipeline health and data freshness, reducing operational handling time by <b>20%</b>.</li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <div class="jobHead">
-              <div>
-                <div class="jobTitle">Data Engineer – Seller Risk & Operations Analytics</div>
-                <div class="jobOrg">Amazon India · Bengaluru, India</div>
-              </div>
-              <div class="jobMeta">Jun 2020 – Apr 2022</div>
-            </div>
-            <ul class="bullets">
-              <li>Developed ETL pipelines and analytical datasets over <b>200M+</b> shipments and <b>40M+</b> invoices supporting fraud detection and seller risk analytics.</li>
-              <li>Authored and optimized SQL transformations and KPI pipelines; later managed transformations using dbt for reusability and version control.</li>
-              <li>Delivered clean, well-tested dbt models for Snowflake-backed reporting and dashboards.</li>
-              <li>Maintained documentation and metric definitions to ensure trust and consistency for analytics consumers.</li>
-              <li>Optimized Hadoop-based pipelines via partitioning and join tuning, improving ingestion stability by <b>20%</b>.</li>
-            </ul>
+          <div class="ctaRow">
+            <a class="btnPrimary" href="#featured">View Selected Systems</a>
+            <a class="btnGhost" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
-      </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="section">
-        <div class="sectionHead">
-          <h2>Skills</h2>
-          <p class="hint">Grouped the way teams actually hire.</p>
-        </div>
-
-        <div class="skillCards">
-          <div class="sCard">
-            <div class="sTitle">Analytics</div>
-            <div class="sText">EDA, KPI design, cohort analysis, experimentation thinking, storytelling</div>
-          </div>
-          <div class="sCard">
-            <div class="sTitle">Data Engineering</div>
-            <div class="sText">SQL modeling, dbt (staging/marts/tests/docs), Snowflake, pipelines, data quality</div>
-          </div>
-          <div class="sCard">
-            <div class="sTitle">Machine Learning</div>
-            <div class="sText">Regression/classification, evaluation, feature engineering, interpretability (SHAP)</div>
-          </div>
-          <div class="sCard">
-            <div class="sTitle">BI</div>
-            <div class="sText">Tableau, Power BI, dashboard design, stakeholder-ready visuals</div>
+        <div class="sideBlock">
+          <div class="sideTitle">Core Focus</div>
+          <div class="chips">
+            <span class="chip">dbt (staging → marts)</span>
+            <span class="chip">Snowflake</span>
+            <span class="chip">PySpark</span>
+            <span class="chip">SQL (joins/windows)</span>
+            <span class="chip">Data Quality</span>
+            <span class="chip">Model Evaluation</span>
           </div>
         </div>
-      </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section">
-        <div class="sectionHead">
-          <h2>Contact</h2>
-          <p class="hint">Fastest way to reach me.</p>
+        <div class="sideBlock">
+          <div class="sideTitle">Quick Links</div>
+          <div class="sideLinks">
+            <a class="linkBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="linkBtn" href="mailto:youremail@example.com">Email</a>
+            <a class="linkBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="linkBtn" href="#contact">Contact</a>
+          </div>
+          <p class="miniHint">Tip: replace LinkedIn + email when ready.</p>
         </div>
+      </aside>
 
-        <div class="contactRow">
-          <a class="contactBtn" href="mailto:youremail@example.com">Email</a>
-          <a class="contactBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="contactBtn" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
-          <a class="contactBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-        </div>
-      </section>
+      <!-- RIGHT CONTENT -->
+      <main class="content">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="heroKicker">Systems Portfolio</div>
+          <h1>Data systems that hold up in production.</h1>
+          <p class="sub">
+            Case-study style projects across Snowflake + dbt, Spark pipelines, and ML-ready datasets.
+            Each one is written as <span class="em">problem → approach → reliability → impact</span>.
+          </p>
 
-      <footer class="footer">
-        <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
-        <div>Hosted on GitHub Pages</div>
-      </footer>
-    </main>
-  </div>
+          <div class="heroStats">
+            <div class="stat">
+              <div class="statNum">1B+</div>
+              <div class="statLabel">records processed</div>
+            </div>
+            <div class="stat">
+              <div class="statNum">dbt</div>
+              <div class="statLabel">tests + lineage</div>
+            </div>
+            <div class="stat">
+              <div class="statNum">Spark</div>
+              <div class="statLabel">partitioning + tuning</div>
+            </div>
+          </div>
+        </section>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    const btn = document.getElementById("themeToggle");
-    btn.addEventListener("click", () => {
-      document.body.classList.toggle("light");
-      btn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
-    });
-  </script>
-</body>
-</html>
+        <!-- SELECTED SYSTEMS -->
+        <section id="featured" class="section band">
+          <h2>Selected Systems</h2>
+
+          <div class="grid">
+            <!-- System 1: Boston case study -->
+            <article class="card">
+              <div class="cardTop">
+                <div class="badge">MODEL</div>
+                <div class="cardTitle">Housing Price Drivers & Model Comparison</div>
+                <div class="cardMeta">Regression · Trees · k-NN · Ensembles · GAM · Neural Net</div>
+              </div>
+
+              <div class="cardBody">
+                <p class="cardDesc">
+                  Built a consistent evaluation framework (MSPE) to compare multiple modeling approaches and
+                  explain trade-offs. Focused on interpretable recommendations and “why this model” decisions.
+                </p>
+
+                <div class="bullets">
+                  <div>• Standardized preprocessing + splits to ensure fair comparison</div>
+                  <div>• Summarized results in stakeholder-friendly visuals</div>
+                  <div>• Documented the selection rationale (accuracy vs interpretability)</div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Model Evaluation</span>
+                  <span class="tag">MSPE</span>
+                  <span class="tag">Interpretability</span>
+                </div>
+
+                <div class="cardLinks">
+
 
 
 
