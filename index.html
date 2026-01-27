@@ -1,139 +1,161 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Aishwarya Gurrala Muni | Data Engineering Portfolio</title>
-  <meta name="description" content="Data Engineer portfolio: Snowflake + dbt, Spark pipelines, SQL modeling, and ML-ready datasets."/>
-  <link rel="stylesheet" href="assets/style.css?v=3"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="topbarInner">
-      <a class="brand" href="#">
-        <span class="brandDot"></span>
-        <span class="brandName">Aishwarya Gurrala Muni</span>
-      </a>
-
-      <nav class="topnav">
-        <a href="#featured">Selected Systems</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Capabilities</a>
-        <a href="#certs">Credentials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="topActions">
-        <button class="themeToggle" id="themeToggle" aria-label="Toggle theme">☾</button>
-        <a class="pill" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="brand">
+        <span class="brand__dot"></span>
+        <span class="brand__name">YourName</span>
       </div>
+
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Experience</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <div class="wrap">
-    <div class="layout">
-      <!-- LEFT SIDEBAR -->
-      <aside class="sidebar">
-        <div class="profile">
-          <div class="name">Aishwarya<br/>Gurrala Muni</div>
-          <div class="role">Data Engineer · Analytics Engineer · Data Scientist</div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero__left">
+        <p class="pill">Data • AI • Engineering</p>
+        <h1>Building practical, clean systems that ship.</h1>
+        <p class="sub">
+          Short 2–3 line intro about what you do, what you’re targeting, and the kind of work you enjoy.
+        </p>
 
-          <p class="blurb">
-            Snowflake + dbt transformations, Spark pipelines, and SQL modeling that turn messy data into
-            dependable datasets for decision-making and ML workflows.
-          </p>
+        <div class="hero__cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#" download>Download Resume</a>
+        </div>
 
-          <div class="ctaRow">
-            <a class="btnPrimary" href="#featured">View Selected Systems</a>
-            <a class="btnGhost" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub</a>
+        <div class="links">
+          <a href="#" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="#" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="#" target="_blank" rel="noreferrer">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">8+</div>
+            <div class="stat__label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">4 yrs</div>
+            <div class="stat__label">Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">SQL • Py</div>
+            <div class="stat__label">Core Stack</div>
           </div>
         </div>
 
-        <div class="sideBlock">
-          <div class="sideTitle">Core Focus</div>
-          <div class="chips">
-            <span class="chip">dbt (staging → marts)</span>
-            <span class="chip">Snowflake</span>
-            <span class="chip">PySpark</span>
-            <span class="chip">SQL (joins/windows)</span>
-            <span class="chip">Data Quality</span>
-            <span class="chip">Model Evaluation</span>
-          </div>
+        <div class="panel">
+          <h3>Currently building</h3>
+          <p>One-liner about your current portfolio project (ex: Smart Explorer / RAG / dashboards).</p>
         </div>
+      </div>
+    </section>
 
-        <div class="sideBlock">
-          <div class="sideTitle">Quick Links</div>
-          <div class="sideLinks">
-            <a class="linkBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="linkBtn" href="mailto:youremail@example.com">Email</a>
-            <a class="linkBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-            <a class="linkBtn" href="#contact">Contact</a>
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p>Stuff I built — focused on shipping + measurable outcomes.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__top">
+            <span class="tag">PERSONAL</span>
+            <span class="meta">React • JS</span>
           </div>
-          <p class="miniHint">Tip: replace LinkedIn + email when ready.</p>
+          <h3>AlgoRecall</h3>
+          <p>Spaced repetition for DSA patterns — lightweight, fast, and browser-only storage.</p>
+          <div class="card__actions">
+            <a href="#" class="link">Case study ↗</a>
+            <a href="#" class="link">Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="tag tag--work">WORK</span>
+            <span class="meta">Python • SQL</span>
+          </div>
+          <h3>Customer Insights Pipeline</h3>
+          <p>Event-driven pipeline analyzing tickets and producing root-cause summaries.</p>
+          <div class="card__actions">
+            <a href="#" class="link">Case study ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="tag">DATA</span>
+            <span class="meta">Tableau • Power BI</span>
+          </div>
+          <h3>Dashboard Pack</h3>
+          <p>Clean dashboards with business KPIs, drilldowns, and performance tracking.</p>
+          <div class="card__actions">
+            <a href="#" class="link">View ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p>A quick snapshot — no fluff.</p>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span>
+        <span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">ETL</span>
+        <span class="chip">ML</span><span class="chip">AWS</span><span class="chip">Databricks</span>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2>Experience</h2>
+        <p>What I did and what changed because of it.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="item">
+          <h3>Senior Data Analyst — Amazon</h3>
+          <p class="muted">2020–2024 • Risk Analytics • SQL/Python/Dashboards</p>
+          <ul>
+            <li>Example impact bullet — speed, cost, accuracy, time saved.</li>
+            <li>Example impact bullet — scale, automation, data quality.</li>
+          </ul>
         </div>
-      </aside>
+      </div>
+    </section>
 
-      <!-- RIGHT CONTENT -->
-      <main class="content">
-        <!-- HERO -->
-        <section class="hero">
-          <div class="heroKicker">Systems Portfolio</div>
-          <h1>Data systems that hold up in production.</h1>
-          <p class="sub">
-            Case-study style projects across Snowflake + dbt, Spark pipelines, and ML-ready datasets.
-            Each one is written as <span class="em">problem → approach → reliability → impact</span>.
-          </p>
+    <section id="contact" class="section footer">
+      <h2>Let’s connect</h2>
+      <p>Drop a message — I’ll respond.</p>
+      <div class="hero__cta">
+        <a class="btn" href="mailto:you@email.com">Email me</a>
+        <a class="btn btn--ghost" href="#">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
 
-          <div class="heroStats">
-            <div class="stat">
-              <div class="statNum">1B+</div>
-              <div class="statLabel">records processed</div>
-            </div>
-            <div class="stat">
-              <div class="statNum">dbt</div>
-              <div class="statLabel">tests + lineage</div>
-            </div>
-            <div class="stat">
-              <div class="statNum">Spark</div>
-              <div class="statLabel">partitioning + tuning</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SELECTED SYSTEMS -->
-        <section id="featured" class="section band">
-          <h2>Selected Systems</h2>
-
-          <div class="grid">
-            <!-- System 1: Boston case study -->
-            <article class="card">
-              <div class="cardTop">
-                <div class="badge">MODEL</div>
-                <div class="cardTitle">Housing Price Drivers & Model Comparison</div>
-                <div class="cardMeta">Regression · Trees · k-NN · Ensembles · GAM · Neural Net</div>
-              </div>
-
-              <div class="cardBody">
-                <p class="cardDesc">
-                  Built a consistent evaluation framework (MSPE) to compare multiple modeling approaches and
-                  explain trade-offs. Focused on interpretable recommendations and “why this model” decisions.
-                </p>
-
-                <div class="bullets">
-                  <div>• Standardized preprocessing + splits to ensure fair comparison</div>
-                  <div>• Summarized results in stakeholder-friendly visuals</div>
-                  <div>• Documented the selection rationale (accuracy vs interpretability)</div>
-                </div>
-
-                <div class="tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Model Evaluation</span>
-                  <span class="tag">MSPE</span>
-                  <span class="tag">Interpretability</span>
-                </div>
-
-                <div class="cardLinks">
 
 
 
