@@ -4,426 +4,364 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Aishwarya Gurrala Muni | Portfolio</title>
-  <meta name="description" content="Portfolio of Aishwarya Gurrala Muni — Data Analytics, Data Science, and AI/ML. SQL, Python, ML evaluation, and decision-ready insights."/>
+  <meta name="description" content="Portfolio of Aishwarya Gurrala Muni — Data Analytics, Data Engineering, and AI/ML projects."/>
   <link rel="stylesheet" href="assets/style.css"/>
 </head>
 
 <body>
-  <!-- Top utility bar -->
-  <header class="topbar">
-    <div class="topbarInner">
-      <a class="brand" href="#top">
-        <span class="brandDot"></span>
-        <span class="brandName">Aishwarya Gurrala Muni</span>
-      </a>
+  <button class="themeToggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
 
-      <nav class="topnav">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-      </nav>
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="name">Aishwarya<br/>Gurrala Muni</div>
+        <div class="role">Data Analytics · Data Engineering · AI/ML</div>
 
-      <div class="topActions">
-        <a class="btn ghost" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
-        <button class="themeToggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-      </div>
-    </div>
-  </header>
-
-  <main id="top" class="wrap">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="heroLeft">
-        <div class="eyebrow">DATA ANALYTICS · DATA SCIENCE · AI/ML</div>
-
-        <!-- More “your voice”: confident, direct, not corporate-cliché -->
-        <h1>
-          I build analytics and ML systems that are clean, explainable, and actually usable.
-        </h1>
-
-        <p class="sub">
-          I work across SQL, Python, and modeling—turning messy data into reliable metrics,
-          strong baselines, and models you can trust (and explain) to stakeholders.
+        <p class="blurb">
+          I build clean, decision-ready analytics and ML work—strong SQL foundations,
+          reliable metrics, and models that are easy to validate and explain.
         </p>
 
         <div class="ctaRow">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Open Resume ↗</a>
+          <a class="btn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Download Resume ↗</a>
         </div>
+      </div>
+
+      <div class="sideBlock">
+        <div class="sideTitle">Top Skills</div>
+        <div class="chips">
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Data Modeling</span>
+          <span class="chip">ETL</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Model Evaluation</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Streamlit</span>
+          <span class="chip">Docker</span>
+        </div>
+      </div>
+
+      <nav class="sideNav">
+        <a href="#featured" class="sideLink">Projects</a>
+        <a href="#experience" class="sideLink">Experience</a>
+        <a href="#skills" class="sideLink">Skills</a>
+        <a href="#education" class="sideLink">Education</a>
+        <a href="#now" class="sideLink">Now</a>
+      </nav>
+
+      <div class="sideLinks">
+        <a class="linkBtn" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="linkBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="linkBtn" href="mailto:youremail@example.com">Email</a>
+        <a class="linkBtn" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+
+      <div class="sideHint">
+        <div class="hintTitle">Quick setup</div>
+        <div class="hintText">
+          Put images in <code>assets/projects/</code>. If missing, cards still look clean.
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="content">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="eyebrow">ANALYTICS · ENGINEERING · AI/ML</div>
+
+        <h1>Data work that’s clean, credible, and easy to act on.</h1>
+
+        <p class="sub">
+          I combine analytics, data engineering, and ML evaluation to turn messy data into
+          trustworthy insights—plus models that don’t feel like a black box.
+        </p>
 
         <div class="proofGrid">
           <div class="proofCard">
             <div class="proofValue">2M+</div>
-            <div class="proofLabel">records processed</div>
+            <div class="proofLabel">records prepared</div>
             <div class="proofMeta">analytics-ready + ML-ready</div>
           </div>
+
           <div class="proofCard">
             <div class="proofValue">6</div>
-            <div class="proofLabel">portfolio projects</div>
-            <div class="proofMeta">DA · DS · DE · AI/ML</div>
+            <div class="proofLabel">projects shipped</div>
+            <div class="proofMeta">case-studies + apps</div>
           </div>
+
           <div class="proofCard">
             <div class="proofValue">End-to-end</div>
-            <div class="proofLabel">delivery</div>
-            <div class="proofMeta">ETL → insights → model → story</div>
+            <div class="proofLabel">from data → decision</div>
+            <div class="proofMeta">ETL · metrics · models</div>
           </div>
         </div>
+      </section>
 
-        <div class="socialRow">
-          <a class="pill" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="pill" href="mailto:youremail@example.com">Email</a>
-        </div>
-      </div>
-
-      <div class="heroRight">
-        <div class="profileCard">
-          <div class="profileTop">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <div class="nameBig">Aishwarya</div>
-              <div class="roleBig">Data Analytics · Data Science · AI/ML</div>
-            </div>
-          </div>
-
-          <div class="miniGrid">
-            <div class="mini">
-              <div class="k">Strength</div>
-              <div class="v">SQL + Python + ML evaluation</div>
-            </div>
-            <div class="mini">
-              <div class="k">Style</div>
-              <div class="v">clean metrics, clean story</div>
-            </div>
-            <div class="mini">
-              <div class="k">Tools</div>
-              <div class="v">Tableau, Power BI, GitHub, Streamlit</div>
-            </div>
-            <div class="mini">
-              <div class="k">Focus</div>
-              <div class="v">decision-ready outputs</div>
-            </div>
-          </div>
-
-          <div class="profileFooter">
-            <a class="linkRow" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">
-              <span>Resume (PDF)</span><span class="arrow">↗</span>
-            </a>
-            <a class="linkRow" href="#projects">
-              <span>Featured work</span><span class="arrow">↓</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="sectionHead">
+      <!-- PROJECTS -->
+      <section id="featured" class="section">
         <h2>Projects</h2>
         <p class="sectionSub">
-          Each one is written like a case study: what I built, why it matters, and what the results mean.
+          Recruiter-friendly view: what it is, what it does, and why it matters.
         </p>
-      </div>
 
-      <div class="grid">
-        <!-- 1) Boston Housing -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/boston.jpg" alt="Boston Housing case study thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
+        <div class="grid">
+          <!-- 1 -->
+          <article class="card">
             <div class="badge">FEATURED</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">Model Selection Case Study: Boston Housing</div>
-            <div class="cardDesc">
-              Compared regression, trees, k-NN, ensembles, GAM, and neural nets using a consistent MSPE framework.
-              Highlighted trade-offs and made the final choice easy to justify.
+            <div class="thumb">
+              <img src="assets/projects/boston.jpg" alt="Boston Housing thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="tags">
-              <span class="tag">Python/R</span>
-              <span class="tag">Model Evaluation</span>
-              <span class="tag">MSPE</span>
-              <span class="tag">Interpretability</span>
-            </div>
+            <div class="cardBody">
+              <div class="cardTitle">Boston Housing — Model Selection Case Study</div>
+              <div class="cardDesc">
+                Compared regression, trees, k-NN, ensembles, GAM, and neural nets using MSPE.
+                Documented trade-offs and selection rationale in a clear case-study format.
+              </div>
 
-            <div class="cardLinks">
-              <a href="https://aishwarya-gurrala.github.io/boston-housing/" target="_blank" rel="noopener">Live Report ↗</a>
-              <a href="PASTE_BOSTON_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
-            </div>
-          </div>
-        </article>
+              <div class="tags">
+                <span class="tag">Model Evaluation</span>
+                <span class="tag">MSPE</span>
+                <span class="tag">Interpretability</span>
+              </div>
 
-        <!-- 2) Shipping Delay (Streamlit) -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/shipping.jpg" alt="Shipping delay predictor thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
+              <div class="cardLinks">
+                <a href="https://aishwarya-gurrala.github.io/boston-housing/" target="_blank" rel="noopener">Report ↗</a>
+                <a href="PASTE_BOSTON_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card">
             <div class="badge ghost">STREAMLIT</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">E-commerce Shipping Delay Predictor</div>
-            <div class="cardDesc">
-              Built an end-to-end Streamlit app to predict delays, explain drivers, and surface actionable slices
-              (warehouse, route, carrier, delivery window).
+            <div class="thumb">
+              <img src="assets/projects/shipping.jpg" alt="Shipping delay thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Classification</span>
-              <span class="tag">Explainability</span>
-            </div>
+            <div class="cardBody">
+              <div class="cardTitle">Shipping Delay Prediction — Streamlit App</div>
+              <div class="cardDesc">
+                Built an interactive app to predict delays and surface patterns by warehouse, route, and delivery window.
+                Focused on “what to do next,” not just accuracy.
+              </div>
 
-            <div class="cardLinks">
-              <a href="PASTE_STREAMLIT_APP_LINK" target="_blank" rel="noopener">Live App ↗</a>
-              <a href="PASTE_SHIPPING_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
-            </div>
-          </div>
-        </article>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Classification</span>
+              </div>
 
-        <!-- 3) Tennis Prediction -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/tennis.jpg" alt="Tennis win predictor thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
+              <div class="cardLinks">
+                <a href="PASTE_STREAMLIT_APP_LINK" target="_blank" rel="noopener">Live App ↗</a>
+                <a href="PASTE_SHIPPING_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="card">
             <div class="badge ghost">ML</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">Tennis Win Predictor</div>
-            <div class="cardDesc">
-              Modeled match outcomes using strong baselines + tuned ML, then explained predictions with feature importance and SHAP-style reasoning.
+            <div class="thumb">
+              <img src="assets/projects/tennis.jpg" alt="Tennis predictor thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">Model Monitoring</span>
-              <span class="tag">Explainability</span>
+            <div class="cardBody">
+              <div class="cardTitle">Tennis Win Predictor</div>
+              <div class="cardDesc">
+                Built a win-prediction pipeline and evaluated models using strong baselines.
+                Added interpretability so results are explainable and not “magic.”
+              </div>
+
+              <div class="tags">
+                <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">AUC</span>
+              </div>
+
+              <div class="cardLinks">
+                <a href="PASTE_TENNIS_APP_LINK" target="_blank" rel="noopener">Demo ↗</a>
+                <a href="PASTE_TENNIS_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card">
+            <div class="badge ghost">AI/ML</div>
+            <div class="thumb">
+              <img src="assets/projects/f1.jpg" alt="F1 predictor thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="cardLinks">
-              <a href="PASTE_TENNIS_APP_LINK" target="_blank" rel="noopener">Demo/App ↗</a>
-              <a href="PASTE_TENNIS_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+            <div class="cardBody">
+              <div class="cardTitle">F1 Win Probability Predictor</div>
+              <div class="cardDesc">
+                Feature engineering + evaluation to estimate win probability.
+                Built explainability to show what’s driving predictions.
+              </div>
+
+              <div class="tags">
+                <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Metrics</span>
+              </div>
+
+              <div class="cardLinks">
+                <a href="PASTE_F1_APP_LINK" target="_blank" rel="noopener">App ↗</a>
+                <a href="PASTE_F1_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- 4) F1 Win Probability -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/f1.jpg" alt="F1 predictor thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
-            <div class="badge ghost">PROBABILITY</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">F1 Win Probability Predictor</div>
-            <div class="cardDesc">
-              Feature engineering + evaluation to estimate win probability. Added explainability so the model’s “why” is clear, not mysterious.
-            </div>
-
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">SHAP</span>
-              <span class="tag">Metrics</span>
+          <!-- 5 -->
+          <article class="card">
+            <div class="badge ghost">DATA ENG</div>
+            <div class="thumb">
+              <img src="assets/projects/etl.jpg" alt="ETL thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="cardLinks">
-              <a href="PASTE_F1_APP_LINK" target="_blank" rel="noopener">App ↗</a>
-              <a href="PASTE_F1_REPO_LINK" target="_blank" rel="noopener">Code ↗</a>
+            <div class="cardBody">
+              <div class="cardTitle">ETL Pipeline Optimization (Retail)</div>
+              <div class="cardDesc">
+                Built an ETL flow that cleans raw data, standardizes schemas, and outputs KPI-ready tables.
+                Included validation checks + documentation to keep downstream work reliable.
+              </div>
+
+              <div class="tags">
+                <span class="tag">SQL</span><span class="tag">ETL</span><span class="tag">Data Quality</span>
+              </div>
+
+              <div class="cardLinks">
+                <a href="PASTE_ETL_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- 5) Data Engineering project (selected) -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/etl.jpg" alt="ETL optimization thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
-            <div class="badge ghost">DATA ENGINEERING</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">ETL Pipeline Optimization (Retail Data)</div>
-            <div class="cardDesc">
-              Built and optimized an ETL pipeline that cleans raw inputs, standardizes schemas, and produces analytics-ready tables.
-              Included quality checks + documentation so downstream work stays reliable.
-            </div>
-
-            <div class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">ETL</span>
-              <span class="tag">Data Quality</span>
-              <span class="tag">Documentation</span>
-            </div>
-
-            <div class="cardLinks">
-              <a href="PASTE_ETL_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
-              <a href="PASTE_ETL_WRITEUP_LINK" target="_blank" rel="noopener">Notes ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 6) Python + AI project (selected) -->
-        <article class="card">
-          <div class="thumbWrap">
-            <img class="thumbImg" src="assets/projects/ai.jpg" alt="AI project thumbnail"
-                 onerror="this.parentElement.classList.add('fallback'); this.remove();" />
-            <div class="thumbFallback"></div>
+          <!-- 6 -->
+          <article class="card">
             <div class="badge ghost">AI</div>
-          </div>
-
-          <div class="cardBody">
-            <div class="cardTitle">AI Workflow Automation (Docker + Dify)</div>
-            <div class="cardDesc">
-              Designed a workflow-driven AI app that automates a multi-step task (prompt → tool execution → structured output),
-              focused on reliability, repeatability, and clean UX.
+            <div class="thumb">
+              <img src="assets/projects/ai.jpg" alt="AI workflow thumbnail"
+                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+              <div class="thumbFallback"></div>
             </div>
 
-            <div class="tags">
-              <span class="tag">Docker</span>
-              <span class="tag">Dify</span>
-              <span class="tag">LLMs</span>
-              <span class="tag">Automation</span>
-            </div>
+            <div class="cardBody">
+              <div class="cardTitle">AI Workflow Automation (Docker + Dify)</div>
+              <div class="cardDesc">
+                Designed a workflow-driven AI app to automate multi-step tasks.
+                Focused on reliability, repeatability, and clean outputs.
+              </div>
 
-            <div class="cardLinks">
-              <a href="PASTE_AI_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
-              <a href="PASTE_AI_DEMO_LINK" target="_blank" rel="noopener">Demo ↗</a>
-            </div>
-          </div>
-        </article>
-      </div>
+              <div class="tags">
+                <span class="tag">Docker</span><span class="tag">Dify</span><span class="tag">Automation</span>
+              </div>
 
-      <div class="noteBox">
-        <div class="noteTitle">Quick tip</div>
-        <div class="noteText">
-          Put your project images in <code>assets/projects/</code>. If an image is missing,
-          this template automatically shows a clean gradient fallback.
+              <div class="cardLinks">
+                <a href="PASTE_AI_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="sectionHead">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
         <h2>Experience</h2>
-        <p class="sectionSub">Impact-first bullets: scope, what changed, why it mattered.</p>
-      </div>
 
-      <div class="panel">
-        <div class="row">
-          <div class="rowTitle">Amazon — Risk Analyst / Senior Data Analyst</div>
-          <div class="rowMeta">2020–2024</div>
+        <div class="panel">
+          <div class="row">
+            <div class="rowTitle">Amazon — Risk Analyst / Senior Data Analyst</div>
+            <div class="rowMeta">2020–2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Led SQL + Python analysis on large datasets to identify risk patterns and improve operational decision-making.</li>
+            <li>Built consistent KPI definitions and reporting logic so teams aligned on the same “source of truth.”</li>
+            <li>Automated recurring analysis and validation checks to reduce manual work and increase reliability.</li>
+            <li>Delivered dashboards and decision-ready summaries for cross-functional stakeholders.</li>
+            <li>Translated business problems into measurable metrics and experiments—so results were actionable.</li>
+          </ul>
         </div>
+      </section>
 
-        <ul class="bullets">
-          <li>Led SQL + Python analysis to detect risk patterns and reduce operational noise across large-scale datasets (millions of rows).</li>
-          <li>Built KPI definitions and reporting that stayed consistent across teams—so metrics didn’t change every meeting.</li>
-          <li>Automated recurring analysis pipelines and validation checks to improve data reliability and reduce manual effort.</li>
-          <li>Delivered dashboards and decision-ready summaries for stakeholders, turning deep analysis into clear next steps.</li>
-          <li>Partnered cross-functionally (ops, product, and leadership) to translate business problems into measurable targets and experiments.</li>
-        </ul>
-      </div>
-
-      <div class="panel">
-        <div class="row">
-          <div class="rowTitle">University of Cincinnati — Graduate Work (Analytics + AI)</div>
-          <div class="rowMeta">2024–2025</div>
-        </div>
-
-        <ul class="bullets">
-          <li>Developed analytics and ML projects focused on evaluation, interpretability, and clean reporting.</li>
-          <li>Built reproducible workflows: clear notebooks, readable documentation, and case-study style writeups.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="sectionHead">
+      <!-- SKILLS -->
+      <section id="skills" class="section">
         <h2>Skills</h2>
-        <p class="sectionSub">A recruiter should understand your “shape” in 10 seconds.</p>
-      </div>
-
-      <div class="panel">
-        <div class="skillGrid">
-          <div class="skillItem">
-            <div class="k">Data Analytics</div>
-            <div class="v">EDA, KPI design, cohort analysis, root-cause analysis, stakeholder storytelling</div>
-          </div>
-
-          <div class="skillItem">
-            <div class="k">Data Engineering</div>
-            <div class="v">SQL modeling, joins/windows, ETL logic, data quality checks, documentation</div>
-          </div>
-
-          <div class="skillItem">
-            <div class="k">ML / AI</div>
-            <div class="v">Regression/classification, feature engineering, evaluation (MSPE/AUC), explainability</div>
-          </div>
-
-          <div class="skillItem">
-            <div class="k">Tools</div>
-            <div class="v">Python, SQL, R, Tableau, Power BI, GitHub, Streamlit, Docker</div>
+        <div class="panel">
+          <div class="skillGrid">
+            <div>
+              <div class="k">Analytics</div>
+              <div class="v">EDA, KPI design, cohort analysis, RCA, storytelling</div>
+            </div>
+            <div>
+              <div class="k">Engineering</div>
+              <div class="v">SQL modeling, joins/windows, ETL, data quality checks</div>
+            </div>
+            <div>
+              <div class="k">AI/ML</div>
+              <div class="v">Regression/classification, evaluation (MSPE/AUC), explainability</div>
+            </div>
+            <div>
+              <div class="k">BI</div>
+              <div class="v">Tableau, Power BI, dashboard design</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="sectionHead">
+      <!-- EDUCATION -->
+      <section id="education" class="section">
         <h2>Education</h2>
-        <p class="sectionSub">Clear, complete, and aligned to AI/ML roles.</p>
-      </div>
+        <div class="panel">
+          <ul class="bullets">
+            <li>MS Business Analytics — University of Cincinnati</li>
+            <li>Graduate Certificate in Artificial Intelligence — University of Cincinnati</li>
+            <li>BTech Information Technology — Presidency University</li>
+          </ul>
+        </div>
+      </section>
 
-      <div class="panel">
-        <ul class="bullets">
-          <li><strong>MS Business Analytics</strong> — University of Cincinnati</li>
-          <li><strong>Graduate Certificate in Artificial Intelligence</strong> — University of Cincinnati</li>
-          <li><strong>BTech Information Technology</strong> — Presidency University</li>
-        </ul>
-      </div>
-    </section>
+      <!-- NOW -->
+      <section id="now" class="section">
+        <h2>Now</h2>
+        <div class="panel">
+          <ul class="bullets">
+            <li>Targeting roles in Data Analytics / Data Science / AI (US).</li>
+            <li>Building case-study projects and shipping apps that make results easy to understand.</li>
+          </ul>
+        </div>
+      </section>
 
-    <footer class="footer">
-      <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
-      <div class="footerRight">
-        <a href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
-        <span class="dotSep">·</span>
-        <span>Hosted on GitHub Pages</span>
-      </div>
-    </footer>
-  </main>
+      <footer class="footer">
+        <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
+        <div>Hosted on GitHub Pages · <a href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a></div>
+      </footer>
+    </main>
+  </div>
 
   <script>
     // year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // theme: clean dark + clean light (fixed palette)
+    // better theme toggle (clean light mode)
     const btn = document.getElementById("themeToggle");
     const KEY = "agm_theme";
 
-    function applyTheme(t) {
+    function applyTheme(t){
       document.documentElement.dataset.theme = t;
       btn.textContent = (t === "light") ? "☀️" : "🌙";
     }
 
-    const saved = localStorage.getItem(KEY);
-    if (saved) applyTheme(saved);
+    const saved = localStorage.getItem(KEY) || "dark";
+    applyTheme(saved);
 
     btn.addEventListener("click", () => {
       const current = document.documentElement.dataset.theme || "dark";
@@ -434,5 +372,6 @@
   </script>
 </body>
 </html>
+
 
 
