@@ -19,8 +19,8 @@
         <div class="role">Data Analytics · Data Engineering · AI/ML</div>
 
         <p class="blurb">
-          I build clean, decision-ready analytics and ML work—strong SQL foundations,
-          reliable metrics, and models that are easy to validate and explain.
+          I build decision-ready analytics and ML systems — clean data, reliable metrics,
+          and models you can actually trust on a real day.
         </p>
 
         <div class="ctaRow">
@@ -33,23 +33,22 @@
         <div class="chips">
           <span class="chip">SQL</span>
           <span class="chip">Python</span>
-          <span class="chip">Data Modeling</span>
           <span class="chip">ETL</span>
+          <span class="chip">Data Modeling</span>
           <span class="chip">Machine Learning</span>
           <span class="chip">Model Evaluation</span>
+          <span class="chip">Streamlit</span>
           <span class="chip">Tableau</span>
           <span class="chip">Power BI</span>
-          <span class="chip">Streamlit</span>
           <span class="chip">Docker</span>
         </div>
       </div>
 
       <nav class="sideNav">
-        <a href="#featured" class="sideLink">Projects</a>
+        <a href="#projects" class="sideLink">Projects</a>
         <a href="#experience" class="sideLink">Experience</a>
         <a href="#skills" class="sideLink">Skills</a>
         <a href="#education" class="sideLink">Education</a>
-        <a href="#now" class="sideLink">Now</a>
       </nav>
 
       <div class="sideLinks">
@@ -60,9 +59,9 @@
       </div>
 
       <div class="sideHint">
-        <div class="hintTitle">Quick setup</div>
+        <div class="hintTitle">Images</div>
         <div class="hintText">
-          Put images in <code>assets/projects/</code>. If missing, cards still look clean.
+          Put thumbnails in <code>assets/projects/</code> using the filenames in the cards.
         </div>
       </div>
     </aside>
@@ -73,11 +72,11 @@
       <section class="hero">
         <div class="eyebrow">ANALYTICS · ENGINEERING · AI/ML</div>
 
-        <h1>Data work that’s clean, credible, and easy to act on.</h1>
+        <h1>Analytics + engineering that make decisions easier.</h1>
 
         <p class="sub">
-          I combine analytics, data engineering, and ML evaluation to turn messy data into
-          trustworthy insights—plus models that don’t feel like a black box.
+          I combine clean data pipelines, strong metrics, and practical ML evaluation
+          to build work that’s reliable — and easy to explain.
         </p>
 
         <div class="proofGrid">
@@ -88,47 +87,117 @@
           </div>
 
           <div class="proofCard">
-            <div class="proofValue">6</div>
-            <div class="proofLabel">projects shipped</div>
-            <div class="proofMeta">case-studies + apps</div>
+            <div class="proofValue">3</div>
+            <div class="proofLabel">live projects</div>
+            <div class="proofMeta">apps + deployed reports</div>
           </div>
 
           <div class="proofCard">
             <div class="proofValue">End-to-end</div>
-            <div class="proofLabel">from data → decision</div>
-            <div class="proofMeta">ETL · metrics · models</div>
+            <div class="proofLabel">from data → output</div>
+            <div class="proofMeta">ETL · evaluation · delivery</div>
           </div>
         </div>
       </section>
 
       <!-- PROJECTS -->
-      <section id="featured" class="section">
-        <h2>Projects</h2>
-        <p class="sectionSub">
-          Recruiter-friendly view: what it is, what it does, and why it matters.
-        </p>
+      <section id="projects" class="section">
+        <div class="sectionHead">
+          <div>
+            <h2>Projects</h2>
+            <p class="sectionSub">Live apps + deep-dive case studies (challenge → solution → impact).</p>
+          </div>
 
-        <div class="grid">
-          <!-- 1 -->
+          <!-- Tabs -->
+          <div class="tabs" role="tablist" aria-label="Project tabs">
+            <button class="tabBtn isActive" data-tab="live" role="tab" aria-selected="true">Live</button>
+            <button class="tabBtn" data-tab="case" role="tab" aria-selected="false">Case Studies</button>
+          </div>
+        </div>
+
+        <!-- LIVE PROJECTS (ONLY 3) -->
+        <div class="grid tabPanel isActive" data-panel="live">
+          <!-- F1 -->
           <article class="card">
-            <div class="badge">FEATURED</div>
-            <div class="thumb">
-              <img src="assets/projects/boston.jpg" alt="Boston Housing thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
+            <div class="badge">LIVE</div>
+
+            <a class="cardTopLink" href="https://f1-prediction-app-mruoings3ujrejeukpdwkx.streamlit.app/" target="_blank" rel="noopener">
+              <div class="thumb">
+                <img src="assets/projects/f1-thumb.png" alt="F1 Win Probability Predictor thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
+              </div>
+            </a>
+
+            <div class="cardBody">
+              <div class="cardTitle">Formula 1 — Win Probability Predictor</div>
+              <div class="cardDesc">
+                Leakage-safe race-day win odds using pre-race signals only.
+                Last season held out for evaluation. Built + deployed with Streamlit.
+              </div>
+
+              <div class="tags">
+                <span class="tag">XGBoost</span><span class="tag">Evaluation</span><span class="tag">Streamlit</span>
+              </div>
+
+              <div class="cardLinks">
+                <a href="https://f1-prediction-app-mruoings3ujrejeukpdwkx.streamlit.app/" target="_blank" rel="noopener">Live App ↗</a>
+                <a href="https://github.com/aishwarya-gurrala/f1-prediction-app" target="_blank" rel="noopener">Code ↗</a>
+              </div>
             </div>
+          </article>
+
+          <!-- Shipping -->
+          <article class="card">
+            <div class="badge">LIVE</div>
+
+            <a class="cardTopLink" href="https://shipping-delay-ml-ty2sk489ucfsrx5qojicaa.streamlit.app" target="_blank" rel="noopener">
+              <div class="thumb">
+                <img src="assets/projects/shipping-thumb.png" alt="Shipping Delay Prediction thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
+              </div>
+            </a>
+
+            <div class="cardBody">
+              <div class="cardTitle">Shipping Delay Prediction — Supply Chain</div>
+              <div class="cardDesc">
+                Interactive app to predict late shipments and surface patterns by warehouse,
+                route, and delivery window — focused on actionable next steps.
+              </div>
+
+              <div class="tags">
+                <span class="tag">Classification</span><span class="tag">Supply Chain</span><span class="tag">Streamlit</span>
+              </div>
+
+              <div class="cardLinks">
+                <a href="https://shipping-delay-ml-ty2sk489ucfsrx5qojicaa.streamlit.app" target="_blank" rel="noopener">Live App ↗</a>
+                <a href="https://github.com/aishwarya-gurrala/shipping-delay-ml" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Boston -->
+          <article class="card">
+            <div class="badge">LIVE</div>
+
+            <a class="cardTopLink" href="https://aishwarya-gurrala.github.io/boston-housing/" target="_blank" rel="noopener">
+              <div class="thumb">
+                <img src="assets/projects/boston-thumb.png" alt="Boston Housing Case Study thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
+              </div>
+            </a>
 
             <div class="cardBody">
               <div class="cardTitle">Boston Housing — Model Selection Case Study</div>
               <div class="cardDesc">
                 Compared regression, trees, k-NN, ensembles, GAM, and neural nets using MSPE.
-                Documented trade-offs and selection rationale in a clear case-study format.
+                Clear trade-offs + selection rationale.
               </div>
 
               <div class="tags">
-                <span class="tag">Model Evaluation</span>
-                <span class="tag">MSPE</span>
-                <span class="tag">Interpretability</span>
+                <span class="tag">Model Selection</span><span class="tag">MSPE</span><span class="tag">Case Study</span>
               </div>
 
               <div class="cardLinks">
@@ -137,111 +206,55 @@
               </div>
             </div>
           </article>
+        </div>
 
-          <!-- 2 -->
+        <!-- CASE STUDIES (click -> internal pages like your screenshot) -->
+        <div class="grid tabPanel" data-panel="case">
+          <!-- AI Customer Insights -->
           <article class="card">
-            <div class="badge ghost">STREAMLIT</div>
-            <div class="thumb">
-              <img src="assets/projects/shipping.jpg" alt="Shipping delay thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
-            </div>
+            <div class="badge ghost">CASE STUDY</div>
+
+            <a class="cardTopLink" href="projects/ai-customer-insights.html">
+              <div class="thumb">
+                <img src="assets/projects/ai-customer-thumb.png" alt="AI Customer Insights thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
+              </div>
+            </a>
 
             <div class="cardBody">
-              <div class="cardTitle">Shipping Delay Prediction — Streamlit App</div>
+              <div class="cardTitle">AI Driven Customer Insights Analysis</div>
               <div class="cardDesc">
-                Built an interactive app to predict delays and surface patterns by warehouse, route, and delivery window.
-                Focused on “what to do next,” not just accuracy.
+                Event-driven pipeline for root-cause insights from support signals.
+                Includes Challenge → Solution → Impact write-up.
               </div>
 
               <div class="tags">
-                <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Classification</span>
+                <span class="tag">Pipelines</span><span class="tag">RAG</span><span class="tag">Automation</span>
               </div>
 
               <div class="cardLinks">
-               <a href="https://shipping-delay-ml-ty2sk489ucfsrx5qojicaa.streamlit.app" target="_blank" rel="noopener">Live App ↗</a>
-<a href="https://github.com/aishwarya-gurrala/shipping-delay-ml" target="_blank" rel="noopener">Code ↗</a>
-
+                <a href="projects/ai-customer-insights.html">Open Case Study ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 3 -->
+          <!-- ETL Retail -->
           <article class="card">
-            <div class="badge ghost">ML</div>
-            <div class="thumb">
-              <img src="assets/projects/tennis.jpg" alt="Tennis predictor thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
-            </div>
+            <div class="badge ghost">CASE STUDY</div>
 
-            <div class="cardBody">
-              <div class="cardTitle">Formula 1 Win Probability Predictor</div>
-              <div class="cardDesc">
-                A leakage-safe ML app that predicts race-day win probabilities using only pre-race signals.
-Trained on historical seasons with the most recent season held out for validation.
-Built with XGBoost and deployed as a live Streamlit application.
+            <a class="cardTopLink" href="projects/etl-retail.html">
+              <div class="thumb">
+                <img src="assets/projects/etl-thumb.png" alt="ETL Retail thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
               </div>
-
-              <div class="tags">
-                <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">AUC</span>
-              </div>
-
-            <div class="cardLinks">
-  <a href="https://github.com/aishwarya-gurrala/f1-prediction-app" target="_blank">
-    GitHub
-  </a>
-  <a href="https://f1-prediction-app-mruoings3ujrejeukpdwkx.streamlit.app/" target="_blank">
-    Live App ↗
-  </a>
-</div>
-          </article>
-
-          <!-- 4 -->
-          <article class="card">
-            <div class="badge ghost">AI/ML</div>
-            <div class="thumb">
-              <img src="assets/projects/f1.jpg" alt="F1 predictor thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
-            </div>
-
-            <div class="cardBody">
-              <div class="cardTitle">F1 Win Probability Predictor</div>
-              <div class="cardDesc">
-                Feature engineering + evaluation to estimate win probability.
-                Built explainability to show what’s driving predictions.
-              </div>
-
-              <div class="tags">
-                <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Metrics</span>
-              </div>
-
-            <div class="cardLinks">
-  <a href="https://github.com/aishwarya-gurrala/f1-prediction-app" target="_blank">
-    GitHub
-  </a>
-  <a href="https://f1-prediction-app-mruoings3ujrejeukpdwkx.streamlit.app/" target="_blank">
-    Live App ↗
-  </a>
-</div>
-
-          </article>
-
-          <!-- 5 -->
-          <article class="card">
-            <div class="badge ghost">DATA ENG</div>
-            <div class="thumb">
-              <img src="assets/projects/etl.jpg" alt="ETL thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
-            </div>
+            </a>
 
             <div class="cardBody">
               <div class="cardTitle">ETL Pipeline Optimization (Retail)</div>
               <div class="cardDesc">
-                Built an ETL flow that cleans raw data, standardizes schemas, and outputs KPI-ready tables.
-                Included validation checks + documentation to keep downstream work reliable.
+                Cleaned raw data, standardized schemas, and produced KPI-ready tables with validation checks.
               </div>
 
               <div class="tags">
@@ -249,33 +262,35 @@ Built with XGBoost and deployed as a live Streamlit application.
               </div>
 
               <div class="cardLinks">
-                <a href="PASTE_ETL_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
+                <a href="projects/etl-retail.html">Open Case Study ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 6 -->
+          <!-- Dify + Docker -->
           <article class="card">
-            <div class="badge ghost">AI</div>
-            <div class="thumb">
-              <img src="assets/projects/ai.jpg" alt="AI workflow thumbnail"
-                   onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
-              <div class="thumbFallback"></div>
-            </div>
+            <div class="badge ghost">CASE STUDY</div>
+
+            <a class="cardTopLink" href="projects/dify-docker.html">
+              <div class="thumb">
+                <img src="assets/projects/dify-thumb.png" alt="Dify Docker thumbnail"
+                     onerror="this.closest('.thumb').classList.add('fallback'); this.remove();" />
+                <div class="thumbFallback"></div>
+              </div>
+            </a>
 
             <div class="cardBody">
               <div class="cardTitle">AI Workflow Automation (Docker + Dify)</div>
               <div class="cardDesc">
-                Designed a workflow-driven AI app to automate multi-step tasks.
-                Focused on reliability, repeatability, and clean outputs.
+                Workflow-driven automation with repeatable outputs and reliability-first design.
               </div>
 
               <div class="tags">
-                <span class="tag">Docker</span><span class="tag">Dify</span><span class="tag">Automation</span>
+                <span class="tag">Docker</span><span class="tag">Dify</span><span class="tag">Workflows</span>
               </div>
 
               <div class="cardLinks">
-                <a href="PASTE_AI_REPO_LINK" target="_blank" rel="noopener">Repo ↗</a>
+                <a href="projects/dify-docker.html">Open Case Study ↗</a>
               </div>
             </div>
           </article>
@@ -283,59 +298,37 @@ Built with XGBoost and deployed as a live Streamlit application.
       </section>
 
       <!-- EXPERIENCE -->
-     <section id="experience" class="section">
-  <h2>Experience</h2>
+      <section id="experience" class="section">
+        <h2>Experience</h2>
 
-  <!-- UC -->
-  <div class="panel">
-    <div class="row">
-      <div class="rowTitle">Graduate Assistant — Data Engineering & ML Research</div>
-      <div class="rowMeta">University of Cincinnati · Cincinnati, OH · Aug 2024 – Dec 2025</div>
-    </div>
+        <div class="panel">
+          <div class="row">
+            <div class="rowTitle">Graduate Assistant — Data Engineering & ML Research</div>
+            <div class="rowMeta">University of Cincinnati · Cincinnati, OH · Aug 2024 – Dec 2025</div>
+          </div>
 
-    <ul class="bullets">
-      <li>Built Python + PySpark pipelines for <strong>2M+</strong> multimodal (image–text) records to support scalable ingestion, enrichment, and analytics-ready ML datasets.</li>
-      <li>Designed modular workflows with <strong>schema consistency checks</strong>, validation, and reusable transformations aligned with enterprise data engineering practices.</li>
-      <li>Improved pipeline reliability and runtime by <strong>28%</strong> using partitioning, caching, and shuffle reduction techniques.</li>
-      <li>Applied distributed computing concepts (data locality, parallel execution, resource tuning) to improve <strong>cluster utilization</strong> and workload efficiency.</li>
-      <li>Developed Python-based automation + evaluation pipelines integrated into ML workflows, reducing manual effort by <strong>40%</strong> and improving reproducibility.</li>
-      <li>Worked in an Agile research environment with peer programming, design reviews, and ownership of pipeline components end-to-end.</li>
-    </ul>
-  </div>
+          <ul class="bullets">
+            <li>Built Python + PySpark pipelines for <strong>2M+</strong> multimodal (image–text) records for ML-ready datasets.</li>
+            <li>Designed reusable transformations with <strong>schema checks</strong> and validation for reliability.</li>
+            <li>Improved pipeline runtime by <strong>28%</strong> using partitioning, caching, and shuffle reduction.</li>
+            <li>Built evaluation + automation to reduce manual effort by <strong>40%</strong> and improve reproducibility.</li>
+          </ul>
+        </div>
 
-  <!-- Amazon: Senior -->
-  <div class="panel">
-    <div class="row">
-      <div class="rowTitle">Senior Data Engineer — Risk & Analytics Platforms</div>
-      <div class="rowMeta">Amazon India · Bengaluru, India · Apr 2022 – Jun 2024</div>
-    </div>
+        <div class="panel">
+          <div class="row">
+            <div class="rowTitle">Senior Data Engineer — Risk & Analytics Platforms</div>
+            <div class="rowMeta">Amazon India · Bengaluru, India · Apr 2022 – Jun 2024</div>
+          </div>
 
-    <ul class="bullets">
-      <li>Designed and supported large-scale distributed pipelines processing <strong>1B+</strong> supply-chain records daily using <strong>SQL</strong> and <strong>Python</strong>.</li>
-      <li>Delivered analytics-ready datasets used by <strong>10+ teams</strong> for risk detection, compliance monitoring, and operational reporting.</li>
-      <li>Migrated <strong>15+</strong> legacy workflows into Amazon’s enterprise data platform with schema validation, lineage checks, and data quality controls.</li>
-      <li>Improved pipeline performance by <strong>25%</strong> through partition strategy, join optimization, and data layout improvements.</li>
-      <li>Built automated monitoring + RCA dashboards, reducing operational handling time by <strong>20%</strong> and recurring failures by <strong>30%</strong>.</li>
-      <li>Partnered with <strong>5+</strong> platform, security, and analytics teams to align pipelines with governance and architecture standards.</li>
-    </ul>
-  </div>
+          <ul class="bullets">
+            <li>Designed pipelines processing <strong>1B+</strong> supply-chain records daily using SQL + Python.</li>
+            <li>Migrated <strong>15+</strong> workflows with validation, lineage checks, and data quality controls.</li>
+            <li>Built monitoring + RCA dashboards reducing recurring failures by <strong>30%</strong>.</li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- Amazon: DE -->
-  <div class="panel">
-    <div class="row">
-      <div class="rowTitle">Data Engineer — Seller Risk & Operations Analytics</div>
-      <div class="rowMeta">Amazon India · Bengaluru, India · Jun 2020 – Apr 2022</div>
-    </div>
-
-    <ul class="bullets">
-      <li>Developed ETL pipelines and analytical datasets across <strong>200M+</strong> shipments and <strong>40M+</strong> invoices for fraud detection and seller risk modeling.</li>
-      <li>Authored and optimized <strong>50+</strong> SQL transformations and KPI pipelines to improve freshness and reporting reliability.</li>
-      <li>Supported <strong>15+</strong> dashboards by maintaining consistent, well-documented datasets for analytics consumers.</li>
-      <li>Optimized Hadoop-based pipelines using partitioning and join tuning, improving ingestion stability by <strong>20%</strong>.</li>
-      <li>Managed <strong>6+</strong> concurrent data initiatives while coordinating with stakeholders to meet tight delivery timelines.</li>
-    </ul>
-  </div>
-</section>
       <!-- SKILLS -->
       <section id="skills" class="section">
         <h2>Skills</h2>
@@ -351,11 +344,11 @@ Built with XGBoost and deployed as a live Streamlit application.
             </div>
             <div>
               <div class="k">AI/ML</div>
-              <div class="v">Regression/classification, evaluation (MSPE/AUC), explainability</div>
+              <div class="v">Classification/regression, evaluation (AUC/MSPE), explainability</div>
             </div>
             <div>
               <div class="k">BI</div>
-              <div class="v">Tableau, Power BI, dashboard design</div>
+              <div class="v">Tableau, Power BI, Streamlit</div>
             </div>
           </div>
         </div>
@@ -373,17 +366,6 @@ Built with XGBoost and deployed as a live Streamlit application.
         </div>
       </section>
 
-      <!-- NOW -->
-      <section id="now" class="section">
-        <h2>Now</h2>
-        <div class="panel">
-          <ul class="bullets">
-            <li>Targeting roles in Data Analytics / Data Science / AI (US).</li>
-            <li>Building case-study projects and shipping apps that make results easy to understand.</li>
-          </ul>
-        </div>
-      </section>
-
       <footer class="footer">
         <div>© <span id="y"></span> Aishwarya Gurrala Muni</div>
         <div>Hosted on GitHub Pages · <a href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a></div>
@@ -395,7 +377,7 @@ Built with XGBoost and deployed as a live Streamlit application.
     // year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // better theme toggle (clean light mode)
+    // theme toggle
     const btn = document.getElementById("themeToggle");
     const KEY = "agm_theme";
 
@@ -413,9 +395,23 @@ Built with XGBoost and deployed as a live Streamlit application.
       localStorage.setItem(KEY, next);
       applyTheme(next);
     });
+
+    // project tabs
+    const tabBtns = document.querySelectorAll(".tabBtn");
+    const panels = document.querySelectorAll(".tabPanel");
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tab = btn.dataset.tab;
+
+        tabBtns.forEach(b => {
+          b.classList.toggle("isActive", b === btn);
+          b.setAttribute("aria-selected", b === btn ? "true" : "false");
+        });
+
+        panels.forEach(p => p.classList.toggle("isActive", p.dataset.panel === tab));
+      });
+    });
   </script>
 </body>
 </html>
-
-
-
