@@ -34,6 +34,28 @@
     .miniK{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75;margin-bottom:6px}
     .miniV{opacity:.95}
 
+    /* NEW: Artifacts + preview + code block */
+    .caseImg{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(255,255,255,.02);
+      margin-top:10px;
+    }
+    .caseImg img{width:100%;height:auto;display:block}
+    .codeBlock{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      padding:12px;
+      background:rgba(255,255,255,.02);
+      overflow:auto;
+      margin:10px 0 0;
+      opacity:.95;
+      font-size:.92rem;
+      line-height:1.35;
+    }
+    .codeBlock code{background:transparent;padding:0}
+
     code{background:rgba(255,255,255,.06);padding:.15em .35em;border-radius:8px}
   </style>
 </head>
@@ -98,6 +120,43 @@
           <strong>Recommended action</strong> (priority).
         </div>
 
+        <!-- NEW: Artifacts buttons -->
+        <h3 style="margin-top:16px">Artifacts</h3>
+        <div class="btnRow">
+          <!-- Put this file in: assets/projects/feedback_sample.csv -->
+          <a class="btnLite" href="../assets/projects/feedback_sample.csv" download>Sample dataset (CSV) ↗</a>
+
+          <!-- Replace REPO_NAME with your actual repo if you create it -->
+          <a class="btnLite" href="https://github.com/aishwarya-gurrala/REPO_NAME" target="_blank" rel="noopener">Notebook + code ↗</a>
+
+          <!-- Put this file in: assets/projects/feedback_dashboard.png -->
+          <a class="btnLite" href="../assets/projects/feedback_dashboard.png" target="_blank" rel="noopener">Excel dashboard preview ↗</a>
+        </div>
+
+        <!-- NEW: Preview image -->
+        <h3 style="margin-top:16px">Preview</h3>
+        <div class="caseImg">
+          <img src="../assets/projects/feedback_dashboard.png" alt="Excel dashboard preview"
+               onerror="this.style.display='none'"/>
+        </div>
+        <p style="opacity:.85;margin-top:10px">
+          The dashboard summarizes top themes, trend lines over time, and a “what to fix next” table.
+        </p>
+
+        <!-- NEW: Repo structure -->
+        <h3 style="margin-top:16px">Repo structure</h3>
+        <pre class="codeBlock"><code>customer-feedback-insights/
+  data/
+    feedback_sample.csv
+  notebooks/
+    theme_extraction.ipynb
+  outputs/
+    theme_table.csv
+    weekly_summary.md
+  dashboard/
+    feedback_dashboard.xlsx
+  README.md</code></pre>
+
         <h3 style="margin-top:16px">Why it’s believable</h3>
         <p>
           This mirrors real analytics work: take raw messy inputs, make them consistent, produce an output table,
@@ -128,6 +187,13 @@
           </div>
         </div>
 
+        <h3 style="margin-top:16px">Open</h3>
+        <ul>
+          <li><a href="../assets/projects/feedback_dashboard.png" target="_blank" rel="noopener">Dashboard screenshot ↗</a></li>
+          <li><a href="../assets/projects/feedback_sample.csv" download>Sample dataset (CSV) ↗</a></li>
+          <li><a href="https://github.com/aishwarya-gurrala/REPO_NAME" target="_blank" rel="noopener">GitHub repo ↗</a></li>
+        </ul>
+
         <h3 style="margin-top:16px">Keywords</h3>
         <p>
           text cleaning · theme extraction · RCA-style analysis · trend charts · Excel dashboard · decision-ready tables
@@ -141,11 +207,10 @@
         </ul>
 
         <p style="margin-top:14px;opacity:.85">
-          Tip: if you create a repo for this, replace the GitHub link above with that repo URL.
+          Tip: replace <code>REPO_NAME</code> with your actual repo name (once you create it).
         </p>
       </div>
     </div>
   </div>
 </body>
 </html>
-
