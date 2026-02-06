@@ -3,27 +3,37 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>AI Driven Customer Insights Analysis | Aishwarya Gurrala Muni</title>
-  <meta name="description" content="Case study: AI-driven customer insights pipeline — from signals to root-cause themes and actions."/>
+  <title>Customer Feedback Insights Dashboard | Aishwarya Gurrala Muni</title>
+  <meta name="description" content="Personal project: turning messy customer feedback into themes, trends, and actions using Python + Excel dashboards."/>
   <link rel="stylesheet" href="../assets/style.css"/>
   <style>
     .caseWrap{max-width:980px;margin:0 auto;padding:32px 18px}
     .caseTop{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
     .crumbs{opacity:.85;font-size:.95rem}
     .caseTitle{font-size:2rem;line-height:1.15;margin:8px 0 8px}
-    .caseSub{opacity:.9;max-width:72ch}
+    .caseSub{opacity:.9;max-width:78ch}
     .caseMeta{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
     .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.12);padding:8px 10px;border-radius:999px;font-size:.92rem;opacity:.95}
-    .caseGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:22px}
+
+    .caseGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:22px}
     @media (max-width: 920px){.caseGrid{grid-template-columns:1fr}}
+
     .caseCard{border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:18px;background:rgba(255,255,255,.03)}
     .caseCard h3{margin:0 0 10px;font-size:1.05rem;letter-spacing:.2px}
     .caseCard p{margin:0 0 12px;opacity:.92}
     .caseCard ul{margin:0;padding-left:18px;opacity:.92}
+
     .callout{border-left:3px solid rgba(255,255,255,.25);padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.03);opacity:.95}
     .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
     .btnLite{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.14);text-decoration:none}
     .btnLite:hover{border-color:rgba(255,255,255,.25)}
+
+    .miniGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+    @media (max-width: 720px){.miniGrid{grid-template-columns:1fr}}
+    .miniCard{border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px;background:rgba(255,255,255,.02)}
+    .miniK{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75;margin-bottom:6px}
+    .miniV{opacity:.95}
+
     code{background:rgba(255,255,255,.06);padding:.15em .35em;border-radius:8px}
   </style>
 </head>
@@ -35,96 +45,107 @@
         <div class="crumbs">
           <a href="../index.html" style="text-decoration:none">← Back to Portfolio</a>
         </div>
-        <h1 class="caseTitle">AI Driven Customer Insights Analysis</h1>
+
+        <h1 class="caseTitle">Customer Feedback Insights Dashboard</h1>
+
         <p class="caseSub">
-          A pipeline-style case study that turns messy customer/support signals into root-cause themes and actions
-          — built with reliability in mind (schema checks, reproducible runs, and measurable outputs).
+          A small, practical project that turns messy customer reviews/support notes into clear themes,
+          trend charts, and a simple “what to fix next” table — using lightweight NLP + an Excel dashboard.
         </p>
 
         <div class="caseMeta">
-          <span class="pill">Focus: Analytics + Automation</span>
-          <span class="pill">Themes: RCA · Trend detection</span>
-          <span class="pill">Tech: Python · NLP · Lightweight RAG</span>
+          <span class="pill">Type: Personal case study</span>
+          <span class="pill">Focus: Themes + Trends + Actions</span>
+          <span class="pill">Tools: Python · Excel · Visualization</span>
         </div>
 
         <div class="btnRow">
           <a class="btnLite" href="../index.html#projects">View projects</a>
+          <!-- Replace with your repo link if you make one for this project -->
           <a class="btnLite" href="https://github.com/aishwarya-gurrala" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
     </div>
 
     <div class="caseGrid">
+      <!-- LEFT: main story -->
       <div class="caseCard">
-        <h3>Challenge</h3>
+        <h3>Problem</h3>
         <p>
-          Teams often have *tons* of user feedback and support notes, but it’s scattered and inconsistent.
-          The hard part isn’t “getting data” — it’s turning it into trustworthy insight that explains:
+          Feedback is valuable, but it’s usually scattered (reviews, tickets, notes) and inconsistent.
+          The goal here was simple: convert text noise into something a team can actually act on.
         </p>
-        <ul>
-          <li>What’s changing (trend),</li>
-          <li>Why it’s happening (root cause),</li>
-          <li>What to prioritize next (action).</li>
-        </ul>
-
-        <h3 style="margin-top:16px">Approach</h3>
-        <p>
-          I designed an event-driven pipeline that ingests new signals, normalizes them, enriches them
-          with lightweight NLP, and produces decision-ready outputs.
-        </p>
-        <ul>
-          <li><strong>Ingest</strong>: new tickets/feedback → standardized schema</li>
-          <li><strong>Clean</strong>: dedupe, missing values, text normalization</li>
-          <li><strong>Enrich</strong>: tagging, clustering/themes, keyword + semantic signals</li>
-          <li><strong>Summarize</strong>: root cause write-up with examples</li>
-          <li><strong>Output</strong>: weekly themes + “what changed” dashboard-ready tables</li>
-        </ul>
 
         <h3 style="margin-top:16px">What I built</h3>
         <ul>
-          <li>Reusable transformations with <strong>schema consistency checks</strong></li>
-          <li>Automated runs with stable outputs (reproducible)</li>
-          <li>Theme summaries designed for stakeholders (not ML people)</li>
+          <li>A clean <strong>theme table</strong> (theme, count, examples, suggested action)</li>
+          <li>A <strong>trend view</strong> (which themes are rising/falling over time)</li>
+          <li>An <strong>Excel dashboard</strong> with filters for time, product area, and severity</li>
         </ul>
 
-        <h3 style="margin-top:16px">Results</h3>
+        <h3 style="margin-top:16px">How it works (lightweight + real)</h3>
+        <ul>
+          <li><strong>Input</strong>: customer reviews / support notes in a CSV</li>
+          <li><strong>Clean</strong>: remove duplicates, normalize text, handle missing fields</li>
+          <li><strong>Theme extraction</strong>: keyword + simple clustering to group similar issues</li>
+          <li><strong>Evidence</strong>: store 3–5 real examples per theme (so it’s explainable)</li>
+          <li><strong>Output</strong>: dashboard-ready tables + a short summary block</li>
+        </ul>
+
+        <h3 style="margin-top:16px">Outputs</h3>
         <div class="callout">
-          Output format: <strong>Theme</strong> → <strong>Why it’s happening</strong> → <strong>Evidence examples</strong> →
-          <strong>Recommended action</strong> (priority + owner).
+          Final format: <strong>Theme</strong> → <strong>Trend</strong> → <strong>Evidence examples</strong> →
+          <strong>Recommended action</strong> (priority).
         </div>
 
-        <h3 style="margin-top:16px">Next improvements</h3>
-        <ul>
-          <li>Add monitoring: volume spikes, theme drift, freshness checks</li>
-          <li>Evaluation: manual labeling sample + precision of themes</li>
-          <li>Integrate into a BI layer (Tableau/Power BI) for leaders</li>
-        </ul>
+        <h3 style="margin-top:16px">Why it’s believable</h3>
+        <p>
+          This mirrors real analytics work: take raw messy inputs, make them consistent, produce an output table,
+          and visualize it in a way stakeholders can use — without pretending it’s a huge “enterprise pipeline.”
+        </p>
       </div>
 
+      <!-- RIGHT: quick facts -->
       <div class="caseCard">
-        <h3>Why it matters</h3>
-        <p>
-          This is the kind of work that turns “noise” into a workflow. Recruiters usually care about:
-        </p>
-        <ul>
-          <li>Can you turn raw data into usable outputs?</li>
-          <li>Do you care about reliability / quality?</li>
-          <li>Can you explain results to non-technical teams?</li>
-        </ul>
+        <h3>Project snapshot</h3>
 
-        <h3 style="margin-top:16px">Deliverables</h3>
-        <ul>
-          <li>Analytics-ready theme table</li>
-          <li>Weekly insight summary (stakeholder format)</li>
-          <li>Repeatable pipeline run (automation-ready)</li>
-        </ul>
+        <div class="miniGrid">
+          <div class="miniCard">
+            <div class="miniK">Core deliverable</div>
+            <div class="miniV">Excel dashboard + theme table</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniK">Primary skill</div>
+            <div class="miniV">Turning text into decisions</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniK">What it shows</div>
+            <div class="miniV">Cleaning, analytics, visualization, storytelling</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniK">Optional add-on</div>
+            <div class="miniV">Simple Streamlit viewer later</div>
+          </div>
+        </div>
 
         <h3 style="margin-top:16px">Keywords</h3>
         <p>
-          RCA · signal processing · NLP · pipeline design · reproducibility · metrics-ready tables
+          text cleaning · theme extraction · RCA-style analysis · trend charts · Excel dashboard · decision-ready tables
+        </p>
+
+        <h3 style="margin-top:16px">Next improvements</h3>
+        <ul>
+          <li>Add a “top 3 issues this week” summary block</li>
+          <li>Track theme drift month-over-month</li>
+          <li>Add a simple QA check: duplicates, empty text, missing dates</li>
+        </ul>
+
+        <p style="margin-top:14px;opacity:.85">
+          Tip: if you create a repo for this, replace the GitHub link above with that repo URL.
         </p>
       </div>
     </div>
   </div>
 </body>
 </html>
+
