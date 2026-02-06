@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ETL Pipeline Optimization (Retail) | Aishwarya Gurrala Muni</title>
+  <meta name="description" content="Case study: ETL pipeline optimization for retail — clean schemas, KPI-ready tables, validation checks."/>
+  <link rel="stylesheet" href="../assets/style.css"/>
+  <style>
+    .caseWrap{max-width:980px;margin:0 auto;padding:32px 18px}
+    .crumbs{opacity:.85;font-size:.95rem}
+    .caseTitle{font-size:2rem;line-height:1.15;margin:8px 0 8px}
+    .caseSub{opacity:.9;max-width:72ch}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .pill{display:inline-flex;border:1px solid rgba(255,255,255,.12);padding:8px 10px;border-radius:999px;font-size:.92rem;opacity:.95}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    @media (max-width: 920px){.grid{grid-template-columns:1fr}}
+    .card{border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:18px;background:rgba(255,255,255,.03)}
+    .card h3{margin:0 0 10px;font-size:1.05rem}
+    .card p{margin:0 0 12px;opacity:.92}
+    .card ul{margin:0;padding-left:18px;opacity:.92}
+    .callout{border-left:3px solid rgba(255,255,255,.25);padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.03);opacity:.95}
+    code{background:rgba(255,255,255,.06);padding:.15em .35em;border-radius:8px}
+  </style>
+</head>
+
+<body>
+  <div class="caseWrap">
+    <div class="crumbs">
+      <a href="../index.html" style="text-decoration:none">← Back to Portfolio</a>
+    </div>
+
+    <h1 class="caseTitle">ETL Pipeline Optimization (Retail)</h1>
+    <p class="caseSub">
+      Built KPI-ready tables from messy retail transaction data by standardizing schemas, enforcing validation,
+      and designing transformations that are reliable, repeatable, and easy for analytics teams to consume.
+    </p>
+
+    <div class="meta">
+      <span class="pill">Focus: Data Engineering + Analytics</span>
+      <span class="pill">Tech: SQL · Python</span>
+      <span class="pill">Quality: validation · schema checks</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Problem</h3>
+        <p>
+          Raw retail data tends to be inconsistent (missing keys, changing columns, duplicated rows). That creates:
+        </p>
+        <ul>
+          <li>Unstable dashboards (numbers don’t match week to week)</li>
+          <li>Slow analysis (everyone re-cleans data)</li>
+          <li>Low trust (stakeholders stop using reports)</li>
+        </ul>
+
+        <h3 style="margin-top:16px">Solution</h3>
+        <ul>
+          <li>Standardized inputs into a consistent schema (types + column names)</li>
+          <li>Built modular transformations for joins, windows, and aggregations</li>
+          <li>Added data quality checks: duplicates, null keys, row-count drift</li>
+          <li>Produced clean KPI tables for BI tools</li>
+        </ul>
+
+        <h3 style="margin-top:16px">Data quality checks (examples)</h3>
+        <div class="callout">
+          <div>✅ Primary keys not null</div>
+          <div>✅ Duplicate detection for transaction IDs</div>
+          <div>✅ Row-count drift checks per load</div>
+          <div>✅ Schema mismatch alerts</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Outputs</h3>
+        <p>Designed outputs for analytics consumption, not raw storage.</p>
+        <ul>
+          <li><strong>Fact tables</strong>: transactions, order lines</li>
+          <li><strong>Dimensions</strong>: product, store, customer</li>
+          <li><strong>KPI tables</strong>: daily sales, category trends, basket metrics</li>
+        </ul>
+
+        <h3 style="margin-top:16px">Impact</h3>
+        <ul>
+          <li>Reduced “re-cleaning” effort for analysts</li>
+          <li>Improved consistency across dashboards</li>
+          <li>Made reporting logic transparent + repeatable</li>
+        </ul>
+
+        <h3 style="margin-top:16px">Next improvements</h3>
+        <ul>
+          <li>Add automated freshness monitoring</li>
+          <li>Include test suite (Great Expectations / dbt tests style)</li>
+          <li>Document lineage and ownership for tables</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
